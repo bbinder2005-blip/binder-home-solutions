@@ -3,8 +3,10 @@ import { CTASection } from "@/components/home/CTASection";
 import { CheckCircle2 } from "lucide-react";
 import terraceRoofImage from "@/assets/test/terrace-alt1.jpg";
 import pergolaImage from "@/assets/test/pergola-alt1.jpg";
+import markiseImage from "@/assets/test/markise-alt1.jpg";
 import wintergartenImage from "@/assets/test/wintergarten-alt1.jpg";
 import zipScreenImage from "@/assets/test/zip-alt1.jpg";
+import dachfensterImage from "@/assets/test/dachfenster-alt1.jpg";
 import rolladenImage from "@/assets/test/rolladen-alt1.jpg";
 import fensterImage from "@/assets/test/fenster-alt1.jpg";
 
@@ -38,6 +40,20 @@ const services = [
     ],
   },
   {
+    id: "markisen",
+    title: "Markisen",
+    subtitle: "Klassischer Sonnenschutz",
+    image: markiseImage,
+    description: "Unsere hochwertigen Markisen bieten zuverlässigen Sonnenschutz für Terrassen, Balkone und Fensterfronten. Von der klassischen Gelenkarmmarkise bis zur modernen Kassettenmarkise.",
+    features: [
+      "Effektiver Schutz vor Sonne und UV-Strahlung",
+      "Elektrischer Antrieb mit Fernbedienung",
+      "Wind- und Sonnensensor optional",
+      "Kassettenmarkisen für geschütztes Tuch",
+      "Große Auswahl an Farben und Mustern",
+    ],
+  },
+  {
     id: "wintergarten",
     title: "Wintergartenbeschattung",
     subtitle: "Innen- & Außenbeschattung",
@@ -63,6 +79,20 @@ const services = [
       "Moderne Optik und hohe Stabilität",
       "Windbeständig durch ZIP-Führung",
       "Elektrische Steuerung mit Smart-Home-Integration möglich",
+    ],
+  },
+  {
+    id: "dachfenster",
+    title: "Dachfenster",
+    subtitle: "Licht unter dem Dach",
+    image: dachfensterImage,
+    description: "Moderne Dachfenster bringen natürliches Licht in Ihre Dachräume. Ob Neubau oder Renovierung – wir finden die passende Lösung für jede Dachkonstruktion.",
+    features: [
+      "Maximaler Lichteinfall durch große Glasflächen",
+      "3-fach Wärmeschutzverglasung",
+      "Verschiedene Öffnungsarten verfügbar",
+      "Elektrische Öffnung mit Regensensor optional",
+      "Passende Rollläden und Verdunkelungen erhältlich",
     ],
   },
   {
