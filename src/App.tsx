@@ -6,6 +6,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Leistungen from "./pages/Leistungen";
 import Produktgalerie from "./pages/Produktgalerie";
+import Terrassendaecher from "./pages/produkte/Terrassendaecher";
+import PergolaMarkisen from "./pages/produkte/PergolaMarkisen";
+import Wintergartenbeschattung from "./pages/produkte/Wintergartenbeschattung";
+import ZipScreens from "./pages/produkte/ZipScreens";
+import FensterTueren from "./pages/produkte/FensterTueren";
+import Rolllaeden from "./pages/produkte/Rolllaeden";
 import UeberMich from "./pages/UeberMich";
 import Kontakt from "./pages/Kontakt";
 import Impressum from "./pages/Impressum";
@@ -24,6 +30,12 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/leistungen" element={<Leistungen />} />
           <Route path="/produktgalerie" element={<Produktgalerie />} />
+          <Route path="/produkte/terrassendaecher" element={<Terrassendaecher />} />
+          <Route path="/produkte/pergola-markisen" element={<PergolaMarkisen />} />
+          <Route path="/produkte/wintergartenbeschattung" element={<Wintergartenbeschattung />} />
+          <Route path="/produkte/zip-screens" element={<ZipScreens />} />
+          <Route path="/produkte/fenster-tueren" element={<FensterTueren />} />
+          <Route path="/produkte/rolllaeden" element={<Rolllaeden />} />
           <Route path="/ueber-mich" element={<UeberMich />} />
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/impressum" element={<Impressum />} />
