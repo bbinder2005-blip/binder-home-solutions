@@ -139,7 +139,13 @@ export default function Dachfenster() {
                   <Link to="/kontakt">Kostenlose Beratung anfragen</Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="tel:+4915111073043">Jetzt anrufen</a>
+                  <a 
+                    href="https://wa.me/4915111073043?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Dachfenster%20und%20h%C3%A4tte%20gerne%20eine%20Beratung."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    WhatsApp schreiben
+                  </a>
                 </Button>
               </div>
             </div>
