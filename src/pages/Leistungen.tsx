@@ -3,10 +3,10 @@ import { CTASection } from "@/components/home/CTASection";
 import { CheckCircle2 } from "lucide-react";
 import terraceRoofImage from "@/assets/test/terrace-alt1.jpg";
 import pergolaImage from "@/assets/test/pergola-alt1.jpg";
-import markiseImage from "@/assets/test/markise-alt1.jpg";
+import markiseImage from "@/assets/products/markise-1.jpg";
 import wintergartenImage from "@/assets/test/wintergarten-alt1.jpg";
 import zipScreenImage from "@/assets/test/zip-alt1.jpg";
-import dachfensterImage from "@/assets/test/dachfenster-alt1.jpg";
+import dachfensterImage from "@/assets/products/dachfenster-1.jpg";
 import rolladenImage from "@/assets/test/rolladen-alt1.jpg";
 import fensterImage from "@/assets/test/fenster-alt1.jpg";
 
