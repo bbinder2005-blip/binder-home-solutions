@@ -1,216 +1,67 @@
 import { Layout } from "@/components/layout/Layout";
-import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import { CTASection } from "@/components/home/CTASection";
 
-// Terrassendächer
-import terraceOriginal from "@/assets/hero-terrace-real.jpg";
-import terraceAlt1 from "@/assets/test/terrace-alt1.jpg";
-import terraceAlt2 from "@/assets/test/terrace-alt2.jpg";
-import terraceAlt3 from "@/assets/test/terrace-alt3.jpg";
+import terraceImg from "@/assets/test/terrace-alt1.jpg";
+import pergolaImg from "@/assets/test/pergola-alt1.jpg";
+import wintergartenImg from "@/assets/test/wintergarten-alt1.jpg";
+import zipImg from "@/assets/test/zip-alt1.jpg";
+import fensterImg from "@/assets/test/fenster-alt1.jpg";
+import rolladenImg from "@/assets/test/rolladen-alt1.jpg";
 
-// Pergola-Markisen
-import pergolaOriginal from "@/assets/service-pergola-real.jpg";
-import pergolaAlt1 from "@/assets/test/pergola-alt1.jpg";
-import pergolaAlt2 from "@/assets/test/pergola-alt2.jpg";
-import pergolaAlt3 from "@/assets/test/pergola-alt3.jpg";
-
-// Wintergartenbeschattung
-import wintergartenOriginal from "@/assets/service-wintergarten-real.jpg";
-import wintergartenAlt1 from "@/assets/test/wintergarten-alt1.jpg";
-import wintergartenAlt2 from "@/assets/test/wintergarten-alt2.jpg";
-import wintergartenAlt3 from "@/assets/test/wintergarten-alt3.jpg";
-
-// ZIP-Screens
-import zipOriginal from "@/assets/service-zip-real.jpg";
-import zipAlt1 from "@/assets/test/zip-alt1.jpg";
-import zipAlt2 from "@/assets/test/zip-alt2.jpg";
-import zipAlt3 from "@/assets/test/zip-alt3.jpg";
-
-// Fenster & Türen
-import fensterOriginal from "@/assets/service-fenster-real.jpg";
-import fensterAlt1 from "@/assets/test/fenster-alt1.jpg";
-import fensterAlt2 from "@/assets/test/fenster-alt2.jpg";
-import fensterAlt3 from "@/assets/test/fenster-alt3.jpg";
-
-// Rollläden
-import rolladenOriginal from "@/assets/service-rolladen-real.jpg";
-import rolladenAlt1 from "@/assets/test/rolladen-alt1.jpg";
-import rolladenAlt2 from "@/assets/test/rolladen-alt2.jpg";
-import rolladenAlt3 from "@/assets/test/rolladen-alt3.jpg";
-
-interface ProductGallery {
+interface Product {
   id: string;
   name: string;
   description: string;
-  images: { src: string; label: string }[];
+  image: string;
+  href: string;
 }
 
-const productGalleries: ProductGallery[] = [
+const products: Product[] = [
   {
     id: "terrassendaecher",
     name: "Terrassendächer",
     description: "Hochwertige Terrassendächer für ganzjährigen Outdoor-Genuss – wetterfest und elegant.",
-    images: [
-      { src: terraceOriginal, label: "Klassisches Design" },
-      { src: terraceAlt1, label: "Moderne Terrasse" },
-      { src: terraceAlt2, label: "Mediterrane Villa" },
-      { src: terraceAlt3, label: "Penthouse Dachterrasse" },
-    ],
+    image: terraceImg,
+    href: "/produkte/terrassendaecher",
   },
   {
     id: "pergola-markisen",
     name: "Pergola-Markisen",
-    description: "Flexible Beschattungslösungen für Ihre Terrasse mit eleganter Optik.",
-    images: [
-      { src: pergolaOriginal, label: "Premium Pergola" },
-      { src: pergolaAlt1, label: "Gartenterrasse" },
-      { src: pergolaAlt2, label: "Französisches Landhaus" },
-      { src: pergolaAlt3, label: "Villa mit Pool" },
-    ],
+    description: "Flexible Beschattungslösungen mit wasserdichten Lamellen für Ihre Terrasse.",
+    image: pergolaImg,
+    href: "/produkte/pergola-markisen",
   },
   {
     id: "wintergartenbeschattung",
     name: "Wintergartenbeschattung",
     description: "Optimale Klimaregulierung für Ihren Wintergarten zu jeder Jahreszeit.",
-    images: [
-      { src: wintergartenOriginal, label: "Innenliegende Beschattung" },
-      { src: wintergartenAlt1, label: "Klassischer Wintergarten" },
-      { src: wintergartenAlt2, label: "Viktorianischer Stil" },
-      { src: wintergartenAlt3, label: "Moderner Glasanbau" },
-    ],
+    image: wintergartenImg,
+    href: "/produkte/wintergartenbeschattung",
   },
   {
     id: "zip-screens",
     name: "ZIP-Screens",
     description: "Innovative Senkrechtmarkisen für effektiven Sonnen- und Sichtschutz.",
-    images: [
-      { src: zipOriginal, label: "Wohnhaus ZIP-Screen" },
-      { src: zipAlt1, label: "Einfamilienhaus" },
-      { src: zipAlt2, label: "Bürogebäude" },
-      { src: zipAlt3, label: "Strandhaus" },
-    ],
+    image: zipImg,
+    href: "/produkte/zip-screens",
   },
   {
     id: "fenster-tueren",
     name: "Fenster & Türen",
-    description: "Hochwertige Haustüren und Fenster mit bester Wärmedämmung.",
-    images: [
-      { src: fensterOriginal, label: "Premium Haustür" },
-      { src: fensterAlt1, label: "Einfamilienhaus" },
-      { src: fensterAlt2, label: "Fachwerkhaus" },
-      { src: fensterAlt3, label: "Modernes Kubushaus" },
-    ],
+    description: "Hochwertige Haustüren und Fenster mit bester Wärmedämmung und Sicherheit.",
+    image: fensterImg,
+    href: "/produkte/fenster-tueren",
   },
   {
     id: "rolllaeden",
     name: "Rollläden & Insektenschutz",
-    description: "Dachfenster-Rollläden für perfekte Verdunkelung und Wärmedämmung.",
-    images: [
-      { src: rolladenOriginal, label: "Dachfenster-Rollladen" },
-      { src: rolladenAlt1, label: "Schlafzimmer" },
-      { src: rolladenAlt2, label: "Moderner Dachausbau" },
-      { src: rolladenAlt3, label: "Loft mit Bergblick" },
-    ],
+    description: "Rollläden für perfekte Verdunkelung, Wärmedämmung und erhöhte Sicherheit.",
+    image: rolladenImg,
+    href: "/produkte/rolllaeden",
   },
 ];
-
-function ProductCarousel({ product }: { product: ProductGallery }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const goToPrevious = () => {
-    setCurrentIndex((prev) => (prev === 0 ? product.images.length - 1 : prev - 1));
-  };
-
-  const goToNext = () => {
-    setCurrentIndex((prev) => (prev === product.images.length - 1 ? 0 : prev + 1));
-  };
-
-  return (
-    <div id={product.id} className="scroll-mt-32">
-      <div className="grid lg:grid-cols-2 gap-8 items-center">
-        {/* Image Carousel */}
-        <div className="relative group">
-          <div className="aspect-[16/10] rounded-2xl overflow-hidden shadow-xl">
-            <img
-              src={product.images[currentIndex].src}
-              alt={`${product.name} - ${product.images[currentIndex].label}`}
-              className="w-full h-full object-cover transition-transform duration-500"
-            />
-          </div>
-          
-          {/* Navigation Arrows */}
-          <button
-            onClick={goToPrevious}
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/80 hover:bg-background text-foreground p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
-            aria-label="Vorheriges Bild"
-          >
-            <ChevronLeft className="w-6 h-6" />
-          </button>
-          <button
-            onClick={goToNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/80 hover:bg-background text-foreground p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity"
-            aria-label="Nächstes Bild"
-          >
-            <ChevronRight className="w-6 h-6" />
-          </button>
-
-          {/* Image Label */}
-          <div className="absolute bottom-4 left-4 bg-background/90 text-foreground px-4 py-2 rounded-lg text-sm font-medium shadow-lg">
-            {product.images[currentIndex].label}
-          </div>
-
-          {/* Dots Indicator */}
-          <div className="absolute bottom-4 right-4 flex gap-2">
-            {product.images.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => setCurrentIndex(idx)}
-                className={`w-2.5 h-2.5 rounded-full transition-all ${
-                  idx === currentIndex 
-                    ? "bg-primary w-6" 
-                    : "bg-background/60 hover:bg-background/80"
-                }`}
-                aria-label={`Gehe zu Bild ${idx + 1}`}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* Product Info */}
-        <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground">
-            {product.name}
-          </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">
-            {product.description}
-          </p>
-          
-          {/* Thumbnail Grid */}
-          <div className="grid grid-cols-4 gap-3">
-            {product.images.map((img, idx) => (
-              <button
-                key={idx}
-                onClick={() => setCurrentIndex(idx)}
-                className={`aspect-square rounded-lg overflow-hidden border-2 transition-all ${
-                  idx === currentIndex 
-                    ? "border-primary ring-2 ring-primary/20" 
-                    : "border-transparent hover:border-muted-foreground/30"
-                }`}
-              >
-                <img
-                  src={img.src}
-                  alt={img.label}
-                  className="w-full h-full object-cover"
-                />
-              </button>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
 
 export default function Produktgalerie() {
   return (
@@ -225,35 +76,45 @@ export default function Produktgalerie() {
             Produktgalerie
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Entdecken Sie unsere hochwertigen Sonnenschutz- und Bauelemente 
-            in verschiedenen Anwendungsszenarien.
+            Entdecken Sie unsere hochwertigen Sonnenschutz- und Bauelemente. 
+            Klicken Sie auf ein Produkt für mehr Details und Bilder.
           </p>
         </div>
       </section>
 
-      {/* Quick Navigation */}
-      <section className="sticky top-20 z-40 bg-background/95 backdrop-blur-sm border-b border-border">
-        <div className="container mx-auto px-4">
-          <nav className="flex gap-2 py-4 overflow-x-auto scrollbar-hide">
-            {productGalleries.map((product) => (
-              <a
-                key={product.id}
-                href={`#${product.id}`}
-                className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-foreground bg-muted/50 hover:bg-muted rounded-full whitespace-nowrap transition-colors"
-              >
-                {product.name}
-              </a>
-            ))}
-          </nav>
-        </div>
-      </section>
-
-      {/* Product Galleries */}
+      {/* Product Grid */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="space-y-24">
-            {productGalleries.map((product) => (
-              <ProductCarousel key={product.id} product={product} />
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {products.map((product) => (
+              <Link
+                key={product.id}
+                to={product.href}
+                className="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+              >
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                  <h3 className="text-xl font-display font-semibold mb-2 group-hover:text-accent transition-colors">
+                    {product.name}
+                  </h3>
+                  <p className="text-white/80 text-sm mb-4 line-clamp-2">
+                    {product.description}
+                  </p>
+                  <span className="inline-flex items-center gap-2 text-accent text-sm font-medium">
+                    Mehr erfahren
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
