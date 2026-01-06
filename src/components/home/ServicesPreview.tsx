@@ -3,8 +3,10 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import terraceRoofImage from "@/assets/test/terrace-alt1.jpg";
 import pergolaImage from "@/assets/test/pergola-alt1.jpg";
+import markiseImage from "@/assets/test/markise-alt1.jpg";
 import wintergartenImage from "@/assets/test/wintergarten-alt1.jpg";
 import zipScreenImage from "@/assets/test/zip-alt1.jpg";
+import dachfensterImage from "@/assets/test/dachfenster-alt1.jpg";
 import rolladenImage from "@/assets/test/rolladen-alt1.jpg";
 import fensterImage from "@/assets/test/fenster-alt1.jpg";
 
@@ -24,6 +26,13 @@ const services = [
     href: "/produkte/pergola-markisen",
   },
   {
+    title: "Markisen",
+    subtitle: "Klassischer Sonnenschutz",
+    description: "Gelenkarm- und Kassettenmarkisen für jeden Bedarf",
+    image: markiseImage,
+    href: "/produkte/markisen",
+  },
+  {
     title: "Wintergartenbeschattung",
     subtitle: "Innen & Außen",
     description: "Optimaler Hitzeschutz und besseres Raumklima",
@@ -36,6 +45,13 @@ const services = [
     description: "Effektiver Sonnen-, Sicht- und Windschutz",
     image: zipScreenImage,
     href: "/produkte/zip-screens",
+  },
+  {
+    title: "Dachfenster",
+    subtitle: "Licht unter dem Dach",
+    description: "Moderne Dachfenster mit bester Wärmedämmung",
+    image: dachfensterImage,
+    href: "/produkte/dachfenster",
   },
   {
     title: "Rollläden",
@@ -66,7 +82,7 @@ export function ServicesPreview() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {services.map((service) => (
             <Link
               key={service.title}
@@ -80,17 +96,17 @@ export function ServicesPreview() {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="font-display text-xl font-medium text-foreground mb-1">
+              <div className="p-4">
+                <h3 className="font-display text-base font-medium text-foreground mb-0.5">
                   {service.title}
                 </h3>
-                <p className="font-body text-sm text-accent mb-2">{service.subtitle}</p>
-                <p className="font-body text-sm text-muted-foreground mb-4">
+                <p className="font-body text-xs text-accent mb-1">{service.subtitle}</p>
+                <p className="font-body text-xs text-muted-foreground mb-3 line-clamp-2">
                   {service.description}
                 </p>
-                <span className="inline-flex items-center gap-2 font-body text-sm font-medium text-accent group-hover:gap-3 transition-all">
+                <span className="inline-flex items-center gap-1 font-body text-xs font-medium text-accent group-hover:gap-2 transition-all">
                   Mehr erfahren
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-3 h-3" />
                 </span>
               </div>
             </Link>

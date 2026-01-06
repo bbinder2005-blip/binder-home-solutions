@@ -8,8 +8,10 @@ import Leistungen from "./pages/Leistungen";
 import Produktgalerie from "./pages/Produktgalerie";
 import Terrassendaecher from "./pages/produkte/Terrassendaecher";
 import PergolaMarkisen from "./pages/produkte/PergolaMarkisen";
+import Markisen from "./pages/produkte/Markisen";
 import Wintergartenbeschattung from "./pages/produkte/Wintergartenbeschattung";
 import ZipScreens from "./pages/produkte/ZipScreens";
+import Dachfenster from "./pages/produkte/Dachfenster";
 import FensterTueren from "./pages/produkte/FensterTueren";
 import Rolllaeden from "./pages/produkte/Rolllaeden";
 import UeberMich from "./pages/UeberMich";
@@ -32,8 +34,10 @@ const App = () => (
           <Route path="/produktgalerie" element={<Produktgalerie />} />
           <Route path="/produkte/terrassendaecher" element={<Terrassendaecher />} />
           <Route path="/produkte/pergola-markisen" element={<PergolaMarkisen />} />
+          <Route path="/produkte/markisen" element={<Markisen />} />
           <Route path="/produkte/wintergartenbeschattung" element={<Wintergartenbeschattung />} />
           <Route path="/produkte/zip-screens" element={<ZipScreens />} />
+          <Route path="/produkte/dachfenster" element={<Dachfenster />} />
           <Route path="/produkte/fenster-tueren" element={<FensterTueren />} />
           <Route path="/produkte/rolllaeden" element={<Rolllaeden />} />
           <Route path="/ueber-mich" element={<UeberMich />} />
