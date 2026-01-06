@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/home/CTASection";
 
-import img1 from "@/assets/test/markise-alt1.jpg";
-import img2 from "@/assets/test/markise-alt2.jpg";
-import img3 from "@/assets/test/markise-alt3.jpg";
+import img1 from "@/assets/products/markise-1.jpg";
+import img2 from "@/assets/products/markise-2.jpg";
+import img3 from "@/assets/products/markise-3.jpg";
 
 const images = [
-  { src: img1, label: "Modernes Einfamilienhaus" },
-  { src: img2, label: "Mediterrane Terrasse" },
-  { src: img3, label: "Balkon mit Stadtblick" },
+  { src: img1, label: "Kassettenmarkise am Einfamilienhaus" },
+  { src: img2, label: "Gelenkarmmarkise auf Terrasse" },
+  { src: img3, label: "Premium-Markise am Penthouse" },
 ];
 
 const features = [

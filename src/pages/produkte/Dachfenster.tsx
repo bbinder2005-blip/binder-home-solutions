@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/home/CTASection";
 
-import img1 from "@/assets/test/dachfenster-alt1.jpg";
-import img2 from "@/assets/test/dachfenster-alt2.jpg";
-import img3 from "@/assets/test/dachfenster-alt3.jpg";
+import img1 from "@/assets/products/dachfenster-1.jpg";
+import img2 from "@/assets/products/dachfenster-2.jpg";
+import img3 from "@/assets/products/dachfenster-3.jpg";
 
 const images = [
-  { src: img1, label: "Helles Dachzimmer" },
-  { src: img2, label: "Schlafzimmer mit Bergblick" },
+  { src: img1, label: "Gemütliches Schlafzimmer" },
+  { src: img2, label: "Wohnzimmer mit Bergblick" },
   { src: img3, label: "Modernes Home-Office" },
 ];
 

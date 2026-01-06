@@ -5,10 +5,10 @@ import { CTASection } from "@/components/home/CTASection";
 
 import terraceImg from "@/assets/test/terrace-alt1.jpg";
 import pergolaImg from "@/assets/test/pergola-alt1.jpg";
-import markiseImg from "@/assets/test/markise-alt1.jpg";
+import markiseImg from "@/assets/products/markise-1.jpg";
 import wintergartenImg from "@/assets/test/wintergarten-alt1.jpg";
 import zipImg from "@/assets/test/zip-alt1.jpg";
-import dachfensterImg from "@/assets/test/dachfenster-alt1.jpg";
+import dachfensterImg from "@/assets/products/dachfenster-1.jpg";
 import rolladenImg from "@/assets/test/rolladen-alt1.jpg";
 import fensterImg from "@/assets/test/fenster-alt1.jpg";
 
