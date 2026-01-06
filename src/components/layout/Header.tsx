@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 const navigation = [
   { name: "Start", href: "/" },
   { name: "Leistungen", href: "/leistungen" },
+  { name: "Produkte", href: "/produktgalerie" },
   { name: "Über mich", href: "/ueber-mich" },
   { name: "Kontakt", href: "/kontakt" },
 ];
