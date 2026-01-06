@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Phone } from "lucide-react";
-import heroImage from "@/assets/hero-terrace-real.jpg";
+import heroImage from "@/assets/test/terrace-alt2.jpg";
 
 export function HeroSection() {
   const whatsappNumber = "4915111073043";

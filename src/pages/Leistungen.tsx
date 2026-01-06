@@ -1,12 +1,12 @@
 import { Layout } from "@/components/layout/Layout";
 import { CTASection } from "@/components/home/CTASection";
 import { CheckCircle2 } from "lucide-react";
-import terraceRoofImage from "@/assets/service-terrace-real.jpg";
-import pergolaImage from "@/assets/service-pergola-real.jpg";
-import wintergartenImage from "@/assets/service-wintergarten-real.jpg";
-import zipScreenImage from "@/assets/service-zip-real.jpg";
-import rolladenImage from "@/assets/service-rolladen-real.jpg";
-import fensterImage from "@/assets/service-fenster-real.jpg";
+import terraceRoofImage from "@/assets/test/terrace-alt1.jpg";
+import pergolaImage from "@/assets/test/pergola-alt1.jpg";
+import wintergartenImage from "@/assets/test/wintergarten-alt1.jpg";
+import zipScreenImage from "@/assets/test/zip-alt1.jpg";
+import rolladenImage from "@/assets/test/rolladen-alt1.jpg";
+import fensterImage from "@/assets/test/fenster-alt1.jpg";
 
 const services = [
   {

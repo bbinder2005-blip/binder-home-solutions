@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import terraceRoofImage from "@/assets/service-terrace-real.jpg";
-import pergolaImage from "@/assets/service-pergola-real.jpg";
-import wintergartenImage from "@/assets/service-wintergarten-real.jpg";
-import zipScreenImage from "@/assets/service-zip-real.jpg";
-import rolladenImage from "@/assets/service-rolladen-real.jpg";
-import fensterImage from "@/assets/service-fenster-real.jpg";
+import terraceRoofImage from "@/assets/test/terrace-alt1.jpg";
+import pergolaImage from "@/assets/test/pergola-alt1.jpg";
+import wintergartenImage from "@/assets/test/wintergarten-alt1.jpg";
+import zipScreenImage from "@/assets/test/zip-alt1.jpg";
+import rolladenImage from "@/assets/test/rolladen-alt1.jpg";
+import fensterImage from "@/assets/test/fenster-alt1.jpg";
 
 const services = [
   {
@@ -14,42 +14,42 @@ const services = [
     subtitle: "Aluminium & Glas",
     description: "Wetter- und Sonnenschutz mit hochwertiger Maßanfertigung",
     image: terraceRoofImage,
-    href: "/leistungen#terrassendaecher",
+    href: "/produkte/terrassendaecher",
   },
   {
     title: "Pergola-Markisen",
     subtitle: "Flexible Beschattung",
     description: "Moderner Schutz vor Sonne, Hitze und Regen",
     image: pergolaImage,
-    href: "/leistungen#pergola",
+    href: "/produkte/pergola-markisen",
   },
   {
     title: "Wintergartenbeschattung",
     subtitle: "Innen & Außen",
     description: "Optimaler Hitzeschutz und besseres Raumklima",
     image: wintergartenImage,
-    href: "/leistungen#wintergarten",
+    href: "/produkte/wintergartenbeschattung",
   },
   {
     title: "ZIP-Screens",
     subtitle: "Senkrechtmarkisen",
     description: "Effektiver Sonnen-, Sicht- und Windschutz",
     image: zipScreenImage,
-    href: "/leistungen#zip-screens",
+    href: "/produkte/zip-screens",
   },
   {
     title: "Rollläden",
     subtitle: "& Insektenschutz",
     description: "Wärme-, Schall- und Einbruchschutz",
     image: rolladenImage,
-    href: "/leistungen#rolllaeden",
+    href: "/produkte/rolllaeden",
   },
   {
     title: "Fenster & Türen",
     subtitle: "Optional",
     description: "Energieeffiziente und sichere Lösungen",
     image: fensterImage,
-    href: "/leistungen#fenster",
+    href: "/produkte/fenster-tueren",
   },
 ];
 
@@ -99,8 +99,8 @@ export function ServicesPreview() {
 
         <div className="text-center mt-12">
           <Button variant="accent" size="lg" asChild>
-            <Link to="/leistungen" className="flex items-center gap-2">
-              Alle Leistungen ansehen
+            <Link to="/produktgalerie" className="flex items-center gap-2">
+              Alle Produkte ansehen
               <ArrowRight className="w-4 h-4" />
             </Link>
           </Button>
