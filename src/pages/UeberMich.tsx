@@ -35,67 +35,87 @@ const UeberMich = () => {
         </div>
       </section>
 
-      {/* About Content */}
+      {/* Team Section */}
       <section className="section-padding bg-background">
         <div className="container-width">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="aspect-square bg-secondary rounded-lg flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="w-32 h-32 bg-accent/10 rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <span className="font-display text-4xl text-accent">BB</span>
-                  </div>
-                  <h3 className="font-display text-2xl font-semibold text-foreground">
-                    Benedikt Binder
-                  </h3>
-                  <p className="font-body text-muted-foreground mt-2">
-                    Ihr Fachberater für Sonnen- und Wetterschutz
-                  </p>
-                </div>
+          <div className="text-center mb-12">
+            <h2 className="font-display text-3xl sm:text-4xl font-semibold text-foreground mb-4">
+              Unser Team
+            </h2>
+            <p className="font-body text-muted-foreground max-w-2xl mx-auto">
+              Persönliche Beratung von erfahrenen Fachberatern
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Benedikt Binder */}
+            <div className="bg-secondary rounded-lg p-8 text-center">
+              <div className="w-24 h-24 bg-accent/10 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <span className="font-display text-3xl text-accent">BB</span>
               </div>
+              <h3 className="font-display text-2xl font-semibold text-foreground">
+                Benedikt Binder
+              </h3>
+              <p className="font-body text-muted-foreground mt-2">
+                Fachberater für Sonnen- und Wetterschutz
+              </p>
             </div>
 
-            <div>
-              <h2 className="font-display text-3xl font-semibold text-foreground mb-6">
-                Persönliche Beratung mit Leidenschaft
-              </h2>
-              
-              <div className="space-y-4 font-body text-muted-foreground">
-                <p>
-                  Als unabhängiger Fachberater ist es mein Ziel, für Sie die beste Lösung zu finden – 
-                  nicht die teuerste oder einfachste, sondern die, die wirklich zu Ihren Bedürfnissen passt.
-                </p>
-                <p>
-                  Ich nehme mir Zeit für jedes Projekt, höre genau zu und berate ehrlich. 
-                  Denn nur wenn ich Ihre Wünsche und die Gegebenheiten vor Ort wirklich verstehe, 
-                  kann ich Ihnen eine Lösung empfehlen, mit der Sie langfristig zufrieden sind.
-                </p>
-                <p>
-                  Von der ersten Kontaktaufnahme über die Planung bis hin zur fertigen Umsetzung 
-                  bin ich Ihr persönlicher Ansprechpartner. Auch nach Abschluss des Projekts 
-                  stehe ich Ihnen bei Fragen gerne zur Verfügung.
-                </p>
+            {/* Maximilian Größer */}
+            <div className="bg-secondary rounded-lg p-8 text-center">
+              <div className="w-24 h-24 bg-accent/10 rounded-full mx-auto mb-6 flex items-center justify-center">
+                <span className="font-display text-3xl text-accent">MG</span>
               </div>
+              <h3 className="font-display text-2xl font-semibold text-foreground">
+                Maximilian Größer
+              </h3>
+              <p className="font-body text-muted-foreground mt-2">
+                Fachberater für Sonnen- und Wetterschutz
+              </p>
+            </div>
+          </div>
 
-              <div className="mt-8 space-y-4">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                  <span className="font-body text-foreground">
-                    Fokus auf Qualität, Funktion und Langlebigkeit
-                  </span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                  <span className="font-body text-foreground">
-                    Ehrliche, bedarfsorientierte Beratung
-                  </span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
-                  <span className="font-body text-foreground">
-                    Transparente Angebote ohne versteckte Kosten
-                  </span>
-                </div>
+          {/* Shared Philosophy */}
+          <div className="mt-16 max-w-3xl mx-auto">
+            <h3 className="font-display text-2xl font-semibold text-foreground mb-6 text-center">
+              Persönliche Beratung mit Leidenschaft
+            </h3>
+            
+            <div className="space-y-4 font-body text-muted-foreground">
+              <p>
+                Als unabhängige Fachberater ist es unser Ziel, für Sie die beste Lösung zu finden – 
+                nicht die teuerste oder einfachste, sondern die, die wirklich zu Ihren Bedürfnissen passt.
+              </p>
+              <p>
+                Wir nehmen uns Zeit für jedes Projekt, hören genau zu und beraten ehrlich. 
+                Denn nur wenn wir Ihre Wünsche und die Gegebenheiten vor Ort wirklich verstehen, 
+                können wir Ihnen eine Lösung empfehlen, mit der Sie langfristig zufrieden sind.
+              </p>
+              <p>
+                Von der ersten Kontaktaufnahme über die Planung bis hin zur fertigen Umsetzung 
+                sind wir Ihre persönlichen Ansprechpartner. Auch nach Abschluss des Projekts 
+                stehen wir Ihnen bei Fragen gerne zur Verfügung.
+              </p>
+            </div>
+
+            <div className="mt-8 space-y-4">
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                <span className="font-body text-foreground">
+                  Fokus auf Qualität, Funktion und Langlebigkeit
+                </span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                <span className="font-body text-foreground">
+                  Ehrliche, bedarfsorientierte Beratung
+                </span>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
+                <span className="font-body text-foreground">
+                  Transparente Angebote ohne versteckte Kosten
+                </span>
               </div>
             </div>
           </div>
