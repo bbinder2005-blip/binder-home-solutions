@@ -1,28 +1,21 @@
 import { Layout } from "@/components/layout/Layout";
 import { CTASection } from "@/components/home/CTASection";
 import { CheckCircle2, Heart, Target, Users } from "lucide-react";
-
-const values = [
-  {
-    icon: Heart,
-    title: "Persönlich",
-    description: "Direkte Beratung von Mensch zu Mensch, ohne Callcenter oder Warteschleifen",
-  },
-  {
-    icon: Target,
-    title: "Bedarfsorientiert",
-    description: "Ich empfehle nur Lösungen, die wirklich zu Ihren Anforderungen passen",
-  },
-  {
-    icon: Users,
-    title: "Verlässlich",
-    description: "Von der ersten Idee bis zur fertigen Umsetzung bin ich Ihr fester Ansprechpartner",
-  },
-];
-
+const values = [{
+  icon: Heart,
+  title: "Persönlich",
+  description: "Direkte Beratung von Mensch zu Mensch, ohne Callcenter oder Warteschleifen"
+}, {
+  icon: Target,
+  title: "Bedarfsorientiert",
+  description: "Ich empfehle nur Lösungen, die wirklich zu Ihren Anforderungen passen"
+}, {
+  icon: Users,
+  title: "Verlässlich",
+  description: "Von der ersten Idee bis zur fertigen Umsetzung bin ich Ihr fester Ansprechpartner"
+}];
 const UeberMich = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero */}
       <section className="section-padding bg-primary pt-32">
         <div className="container-width text-center">
@@ -66,9 +59,7 @@ const UeberMich = () => {
               <div className="w-24 h-24 bg-accent/10 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="font-display text-3xl text-accent">MG</span>
               </div>
-              <h3 className="font-display text-2xl font-semibold text-foreground">
-                Maximilian Größer
-              </h3>
+              <h3 className="font-display text-2xl font-semibold text-foreground">Maximilian Grießer</h3>
               <p className="font-body text-muted-foreground mt-2">
                 Fachberater für Sonnen- und Wetterschutz
               </p>
@@ -135,11 +126,7 @@ const UeberMich = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {values.map((value) => (
-              <div
-                key={value.title}
-                className="bg-card p-8 rounded-lg shadow-sm border border-border text-center"
-              >
+            {values.map(value => <div key={value.title} className="bg-card p-8 rounded-lg shadow-sm border border-border text-center">
                 <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
                   <value.icon className="w-8 h-8 text-accent" />
                 </div>
@@ -149,15 +136,12 @@ const UeberMich = () => {
                 <p className="font-body text-muted-foreground">
                   {value.description}
                 </p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
 
       <CTASection />
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default UeberMich;
