@@ -25,12 +25,12 @@ export function HeroSection() {
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold text-primary-foreground mb-6 animate-fade-up">
             {businessName}
             <span className="block text-2xl sm:text-3xl lg:text-4xl font-normal mt-2 text-primary-foreground/90">
-              Rollläden, Markisen & Sonnenschutz für Heim und Haus
+              Beratung für Sonnenschutz, Terrasse und Fenster
             </span>
           </h1>
           
           <p className="font-body text-lg sm:text-xl text-primary-foreground/80 mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Ob Rollläden, Markisen, Terrassendächer oder Fenster – ich berate Sie persönlich und unabhängig rund um Ihr Zuhause.
+            Buchen Sie zuerst einen kurzen Telefontermin. Danach lässt sich ein Haustermin gezielt vorbereiten.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up" style={{ animationDelay: "0.2s" }}>
