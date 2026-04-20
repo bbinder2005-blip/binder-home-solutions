@@ -81,10 +81,21 @@ const Datenschutz = () => {
               CRM und Online-Terminbuchung
             </h3>
             <p className="text-muted-foreground">
-              Wenn ein CRM-Formular oder eine Online-Terminbuchung eingebunden wird, werden die dort
-              eingegebenen Daten zur Bearbeitung Ihrer Anfrage und zur Terminabstimmung verarbeitet.
-              Die konkreten Anbieter und zusätzlichen Pflichtangaben müssen vor der Live-Schaltung
-              entsprechend ergänzt werden.
+              Wenn Sie die Online-Terminbuchung nutzen, werden die dort eingegebenen Daten zur
+              Terminabstimmung, Bestätigung, Erinnerung und Nachbereitung verarbeitet. Dazu können
+              Anbieter wie Calendly, Make.com, Google Calendar, Google Sheets, HubSpot und Fireflies.ai
+              eingesetzt werden.
+            </p>
+
+            <h3 className="font-display text-xl font-medium text-foreground mt-6 mb-3">
+              Gesprächsaufzeichnung und Zusammenfassung
+            </h3>
+            <p className="text-muted-foreground">
+              Bei gebuchten Beratungsgesprächen kann das Gespräch aufgezeichnet und automatisch
+              zusammengefasst werden. Die Zusammenfassung dient dazu, Ihr Anliegen, Notizen,
+              Kontaktdaten und mögliche Folgetermine besser vorzubereiten. Vor der finalen Nutzung
+              müssen die konkreten Anbieter, Rechtsgrundlagen, Speicherdauer und
+              Auftragsverarbeitungsverträge geprüft und ergänzt werden.
             </p>
 
             <h3 className="font-display text-xl font-medium text-foreground mt-6 mb-3">

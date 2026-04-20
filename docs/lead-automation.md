@@ -1,6 +1,10 @@
 # Lead-Automation für Binder Hausberatung
 
-Diese Website ist vorbereitet für HubSpot Free Forms und Calendly. Die echte Automatisierung startet, sobald die IDs und Links in der Deployment-Umgebung hinterlegt sind.
+Diese Website ist vorbereitet für HubSpot Free Forms, Calendly und Make.com. Die echte Automatisierung startet,
+sobald die IDs und Links in der Deployment-Umgebung hinterlegt sind.
+
+Das vollständige System mit Make.com, Google Calendar, Google Sheets und Fireflies.ai steht in
+`docs/termin-automatisierung.md`.
 
 ## 1. HubSpot Formular verbinden
 

@@ -25,9 +25,11 @@ Details zur öffentlichen URL und Domain stehen in `docs/public-url.md`.
 
 ## CRM und Termine
 
-Die Website ist für HubSpot-Formulare und Calendly vorbereitet. Die benötigten Umgebungsvariablen stehen in `.env.example`.
+Die Website ist für HubSpot-Formulare, Calendly-Popup-Buchung und Make.com-Automationen vorbereitet.
+Die benötigten Umgebungsvariablen stehen in `.env.example`.
 
 Details zur Lead-Automation stehen in `docs/lead-automation.md`.
+Das vollständige Termin- und Kalender-Setup steht in `docs/termin-automatisierung.md`.
 
 ## Technik
 
