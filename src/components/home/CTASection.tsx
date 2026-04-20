@@ -1,20 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, Mail } from "lucide-react";
+import { businessEmail, businessPhone, businessPhoneLabel, whatsappUrl } from "@/config/contact";
 
 export function CTASection() {
-  const whatsappNumber = "4915111073043";
-  const whatsappMessage = encodeURIComponent("Hallo, ich interessiere mich für eine kostenlose Fachberatung.");
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappLink = whatsappUrl("Hallo, ich möchte eine Beratung für mein Hausprojekt anfragen.");
 
   return (
     <section className="section-padding bg-accent">
       <div className="container-width text-center">
         <h2 className="font-display text-3xl sm:text-4xl font-semibold text-accent-foreground mb-4">
-          Lassen Sie sich jetzt kostenlos beraten
+          Beratung einfach anfragen
         </h2>
         <p className="font-body text-accent-foreground/80 max-w-2xl mx-auto mb-8">
-          Unverbindliche Fachberatung vor Ort in Brandenburg und Berlin. 
-          Ich freue mich auf Ihre Anfrage!
+          Kurz schildern, worum es geht. Ich melde mich mit dem passenden nächsten Schritt für Berlin oder Brandenburg.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -24,9 +22,9 @@ export function CTASection() {
             className="bg-accent-foreground text-accent hover:bg-accent-foreground/90"
             asChild
           >
-            <a href="tel:+4915111073043" className="flex items-center gap-2">
+            <a href={`tel:${businessPhone}`} className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
-              0151 11073043
+              {businessPhoneLabel}
             </a>
           </Button>
           <Button
@@ -35,7 +33,7 @@ export function CTASection() {
             asChild
           >
             <a
-              href={whatsappUrl}
+              href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2"
@@ -50,7 +48,7 @@ export function CTASection() {
             className="bg-accent-foreground text-accent hover:bg-accent-foreground/90"
             asChild
           >
-            <a href="mailto:info@fachberatung-binder.de" className="flex items-center gap-2">
+            <a href={`mailto:${businessEmail}`} className="flex items-center gap-2">
               <Mail className="w-5 h-5" />
               E-Mail schreiben
             </a>

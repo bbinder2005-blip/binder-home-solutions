@@ -21,7 +21,7 @@ const features = [
   "Wind- und Sonnensensor optional",
   "Kassettenmarkisen für geschütztes Tuch",
   "Große Auswahl an Farben und Mustern",
-  "Hochwertige, witterungsbeständige Stoffe",
+  "Passende Tuchqualität für Nutzung und Wetterlage",
 ];
 
 export default function Markisen() {

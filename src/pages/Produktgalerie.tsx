@@ -24,56 +24,56 @@ const products: Product[] = [
   {
     id: "terrassendaecher",
     name: "Terrassendächer",
-    description: "Hochwertige Terrassendächer für ganzjährigen Outdoor-Genuss – wetterfest und elegant.",
+    description: "Beratung zu Glasdach, Beschattung und Wetterschutz für die Terrasse.",
     image: terraceImg,
     href: "/produkte/terrassendaecher",
   },
   {
     id: "pergola-markisen",
     name: "Pergola-Markisen",
-    description: "Flexible Beschattungslösungen mit wasserdichten Lamellen für Ihre Terrasse.",
+    description: "Orientierung zu flexibler Beschattung für Terrasse und Garten.",
     image: pergolaImg,
     href: "/produkte/pergola-markisen",
   },
   {
     id: "markisen",
     name: "Markisen",
-    description: "Klassische Gelenkarm- und Kassettenmarkisen für Terrasse und Balkon.",
+    description: "Beratung zu Gelenkarmmarkisen, Kassettenmarkisen, Motor und Tuch.",
     image: markiseImg,
     href: "/produkte/markisen",
   },
   {
     id: "wintergartenbeschattung",
     name: "Wintergartenbeschattung",
-    description: "Optimale Klimaregulierung für Ihren Wintergarten zu jeder Jahreszeit.",
+    description: "Beratung zu Hitze, Licht und Schatten im Wintergarten.",
     image: wintergartenImg,
     href: "/produkte/wintergartenbeschattung",
   },
   {
     id: "zip-screens",
     name: "ZIP-Screens",
-    description: "Innovative Senkrechtmarkisen für effektiven Sonnen- und Sichtschutz.",
+    description: "Beratung zu Senkrechtmarkisen für Sonnen- und Sichtschutz.",
     image: zipImg,
     href: "/produkte/zip-screens",
   },
   {
     id: "dachfenster",
     name: "Dachfenster",
-    description: "Moderne Dachfenster für maximalen Lichteinfall und gute Belüftung.",
+    description: "Beratung zu Licht, Lüftung, Hitzeschutz und Verdunkelung.",
     image: dachfensterImg,
     href: "/produkte/dachfenster",
   },
   {
     id: "rolllaeden",
     name: "Rollläden & Insektenschutz",
-    description: "Rollläden für perfekte Verdunkelung, Wärmedämmung und erhöhte Sicherheit.",
+    description: "Beratung zu Verdunkelung, Wärmeschutz, Sicherheit und Insektenschutz.",
     image: rolladenImg,
     href: "/produkte/rolllaeden",
   },
   {
     id: "fenster-tueren",
     name: "Fenster & Türen",
-    description: "Hochwertige Haustüren und Fenster mit bester Wärmedämmung und Sicherheit.",
+    description: "Optionales Beratungsthema für Bestand, Modernisierung und Sicherheit.",
     image: fensterImg,
     href: "/produkte/fenster-tueren",
   },
@@ -86,14 +86,14 @@ export default function Produktgalerie() {
       <section className="pt-32 pb-16 bg-gradient-to-b from-muted/50 to-background">
         <div className="container mx-auto px-4 text-center">
           <span className="text-accent font-medium text-sm uppercase tracking-wider">
-            Unsere Produkte
+            Beratungsthemen
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground mt-2 mb-6">
-            Produktgalerie
+            Themenübersicht
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Entdecken Sie unsere hochwertigen Sonnenschutz- und Bauelemente. 
-            Klicken Sie auf ein Produkt für mehr Details und Bilder.
+            Finden Sie schnell das passende Thema für Ihre Anfrage. 
+            Klicken Sie auf einen Bereich, wenn Sie mehr dazu lesen möchten.
           </p>
         </div>
       </section>

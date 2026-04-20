@@ -15,7 +15,7 @@ const Impressum = () => {
             </h2>
             <p className="text-muted-foreground">
               Benedikt Binder<br />
-              Fachberatung Binder<br />
+              Binder Hausberatung<br />
               [Straße und Hausnummer]<br />
               [PLZ Ort]<br />
               Deutschland
@@ -41,7 +41,7 @@ const Impressum = () => {
               Berufsbezeichnung und berufsrechtliche Regelungen
             </h2>
             <p className="text-muted-foreground">
-              Berufsbezeichnung: Fachberater für Bauelemente und Sonnenschutz<br />
+              Tätigkeit: Beratung und Anfrageaufnahme für Bauelemente und Sonnenschutz<br />
               Zuständige Kammer: [Kammer]<br />
               Verliehen in: Deutschland
             </p>

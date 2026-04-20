@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
+import { businessEmail, businessName, businessPhone, businessPhoneLabel } from "@/config/contact";
 
 export function Footer() {
   return (
@@ -9,20 +10,20 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <h3 className="font-display text-2xl font-semibold mb-4">
-              Fachberatung <span className="text-accent-foreground/80">Binder</span>
+              {businessName}
             </h3>
             <p className="text-primary-foreground/70 font-body text-sm leading-relaxed max-w-md mb-6">
-              Persönliche Fachberatung für hochwertige Bauelemente, Sonnen- und Wetterschutzlösungen. 
-              Von der ersten Idee bis zur fertigen Umsetzung – kompetent, ehrlich und zuverlässig.
+              Verständliche Beratung für Sonnenschutz, Terrassendächer, Markisen, Rollläden und Dachfenster.
+              Direkt, einfach und mit klarem nächsten Schritt.
             </p>
             <div className="flex flex-col gap-3">
-              <a href="tel:+4915111073043" className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+              <a href={`tel:${businessPhone}`} className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                 <Phone className="w-4 h-4" />
-                <span className="font-body text-sm">0151 11073043</span>
+                <span className="font-body text-sm">{businessPhoneLabel}</span>
               </a>
-              <a href="mailto:info@fachberatung-binder.de" className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+              <a href={`mailto:${businessEmail}`} className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                 <Mail className="w-4 h-4" />
-                <span className="font-body text-sm">info@fachberatung-binder.de</span>
+                <span className="font-body text-sm">{businessEmail}</span>
               </a>
               <div className="flex items-center gap-3 text-primary-foreground/80">
                 <MapPin className="w-4 h-4" />
@@ -78,7 +79,7 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/20 mt-12 pt-8">
           <p className="font-body text-sm text-primary-foreground/60 text-center">
-            © {new Date().getFullYear()} Fachberatung Binder. Alle Rechte vorbehalten.
+            © {new Date().getFullYear()} {businessName}. Alle Rechte vorbehalten.
           </p>
         </div>
       </div>

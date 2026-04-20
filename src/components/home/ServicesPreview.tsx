@@ -14,21 +14,21 @@ const services = [
   {
     title: "Terrassendächer",
     subtitle: "Aluminium & Glas",
-    description: "Wetter- und Sonnenschutz mit hochwertiger Maßanfertigung",
+    description: "Beratung zu Glasdach, Beschattung und Wetterschutz",
     image: terraceRoofImage,
     href: "/produkte/terrassendaecher",
   },
   {
     title: "Pergola-Markisen",
     subtitle: "Flexible Beschattung",
-    description: "Moderner Schutz vor Sonne, Hitze und Regen",
+    description: "Orientierung zu Sonne, Hitze und flexiblem Wetterschutz",
     image: pergolaImage,
     href: "/produkte/pergola-markisen",
   },
   {
     title: "Markisen",
     subtitle: "Klassischer Sonnenschutz",
-    description: "Gelenkarm- und Kassettenmarkisen für jeden Bedarf",
+    description: "Einfach erklärt: Gelenkarm, Kassette, Motor und Tuch",
     image: markiseImage,
     href: "/produkte/markisen",
   },
@@ -49,7 +49,7 @@ const services = [
   {
     title: "Dachfenster",
     subtitle: "Licht unter dem Dach",
-    description: "Moderne Dachfenster mit bester Wärmedämmung",
+    description: "Beratung zu Licht, Lüftung, Hitzeschutz und Verdunkelung",
     image: dachfensterImage,
     href: "/produkte/dachfenster",
   },
@@ -63,7 +63,7 @@ const services = [
   {
     title: "Fenster & Türen",
     subtitle: "Optional",
-    description: "Energieeffiziente und sichere Lösungen",
+    description: "Optionales Thema für Beratung zu Bestand oder Modernisierung",
     image: fensterImage,
     href: "/produkte/fenster-tueren",
   },
@@ -75,10 +75,10 @@ export function ServicesPreview() {
       <div className="container-width">
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl sm:text-4xl font-semibold text-foreground mb-4">
-            Unsere Leistungen
+            Beratungsthemen
           </h2>
           <p className="font-body text-muted-foreground max-w-2xl mx-auto">
-            Hochwertige Lösungen für Ihr Zuhause – individuell geplant und professionell umgesetzt
+            Schnell finden, worum es geht: Sonnenschutz, Wetterschutz, Licht, Sichtschutz oder Sicherheit.
           </p>
         </div>
 

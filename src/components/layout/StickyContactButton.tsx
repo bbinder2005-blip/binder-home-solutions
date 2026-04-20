@@ -1,10 +1,9 @@
 import { MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { whatsappUrl } from "@/config/contact";
 
 export function StickyContactButton() {
-  const whatsappNumber = "4915111073043";
-  const whatsappMessage = encodeURIComponent("Hallo, ich interessiere mich für eine kostenlose Fachberatung.");
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappLink = whatsappUrl("Hallo, ich möchte eine Beratung für mein Hausprojekt anfragen.");
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
@@ -15,7 +14,7 @@ export function StickyContactButton() {
         asChild
       >
         <a
-          href={whatsappUrl}
+          href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2"

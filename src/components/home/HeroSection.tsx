@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Phone } from "lucide-react";
 import heroImage from "@/assets/test/terrace-alt2.jpg";
+import { businessName, businessPhone, whatsappUrl } from "@/config/contact";
 
 export function HeroSection() {
-  const whatsappNumber = "4915111073043";
-  const whatsappMessage = encodeURIComponent("Hallo, ich interessiere mich für eine kostenlose Fachberatung.");
-  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
+  const whatsappLink = whatsappUrl("Hallo, ich interessiere mich für eine Beratung zu Sonnenschutz oder Bauelementen.");
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
@@ -23,26 +22,26 @@ export function HeroSection() {
       <div className="relative z-10 container-width section-padding text-center lg:text-left">
         <div className="max-w-3xl mx-auto lg:mx-0">
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold text-primary-foreground mb-6 animate-fade-up">
-            Fachberatung Binder
+            {businessName}
             <span className="block text-2xl sm:text-3xl lg:text-4xl font-normal mt-2 text-primary-foreground/90">
-              Qualitätslösungen für Haus & Outdoor-Living
+              Beratung für Sonnenschutz, Terrasse und Fenster
             </span>
           </h1>
           
           <p className="font-body text-lg sm:text-xl text-primary-foreground/80 mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Persönliche Fachberatung • Maßanfertigung • Umsetzung mit geprüften Partnern
+            Einfache Orientierung für Terrassendach, Markise, Rollladen, Dachfenster und Insektenschutz in Berlin und Brandenburg.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up" style={{ animationDelay: "0.2s" }}>
             <Button variant="hero" size="xl" asChild>
-              <a href="tel:+4915111073043" className="flex items-center gap-2">
+              <a href={`tel:${businessPhone}`} className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 Kostenlose Beratung anfragen
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
               <a
-                href={whatsappUrl}
+                href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2"

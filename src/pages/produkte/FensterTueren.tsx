@@ -21,7 +21,7 @@ const features = [
   "Verschiedene Materialien: Kunststoff, Aluminium, Holz",
   "Smart-Lock-Systeme verfügbar",
   "Große Farbauswahl nach RAL",
-  "Made in Germany Qualität",
+  "Klärung von Material, Farbe und Ausstattung",
 ];
 
 export default function FensterTueren() {
@@ -110,16 +110,15 @@ export default function FensterTueren() {
               </div>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Hochwertige Fenster und Haustüren sind die Visitenkarte Ihres Hauses 
-                und entscheidend für Energieeffizienz und Sicherheit. Unsere Produkte 
-                vereinen modernste Technik mit ansprechendem Design.
+                Fenster und Haustüren prägen den ersten Eindruck Ihres Hauses und spielen
+                eine wichtige Rolle für Energie, Sicherheit und Alltag. In der Beratung
+                klären wir, welche Punkte für Ihr Projekt wirklich wichtig sind.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Mit 3-fach Wärmeschutzverglasung und innovativen Rahmenprofilen 
-                erreichen unsere Fenster Spitzenwerte bei der Wärmedämmung. 
-                Serienmäßiger RC2-Einbruchschutz und optional erhältliche 
-                Smart-Lock-Systeme bieten maximale Sicherheit für Ihr Zuhause.
+                Dabei geht es um Wärmeschutz, Einbruchschutz, Bedienung, Design und
+                die passende Lösung für Bestand oder Modernisierung. So bekommen Sie
+                eine verständliche Grundlage für die weitere Entscheidung.
               </p>
 
               <div className="space-y-4">

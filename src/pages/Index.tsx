@@ -3,6 +3,7 @@ import { HeroSection } from "@/components/home/HeroSection";
 import { TrustSection } from "@/components/home/TrustSection";
 import { ProcessSection } from "@/components/home/ProcessSection";
 import { ServicesPreview } from "@/components/home/ServicesPreview";
+import { LeadToolsSection } from "@/components/home/LeadToolsSection";
 import { CTASection } from "@/components/home/CTASection";
 
 const Index = () => {
@@ -11,6 +12,7 @@ const Index = () => {
       <HeroSection />
       <TrustSection />
       <ServicesPreview />
+      <LeadToolsSection />
       <ProcessSection />
       <CTASection />
     </Layout>

@@ -3,28 +3,28 @@ import { CheckCircle2, MapPin, Ruler, Shield, FileText, Users } from "lucide-rea
 const trustItems = [
   {
     icon: MapPin,
-    title: "Persönliche Vor-Ort-Beratung",
-    description: "Ich komme zu Ihnen nach Hause und berate Sie individuell",
+    title: "Beratung vor Ort",
+    description: "Ihr Anliegen wird direkt am Haus, an der Terrasse oder am Fenster besprochen",
   },
   {
     icon: Ruler,
-    title: "Maßanfertigungen",
-    description: "Jede Lösung wird exakt auf Ihre Anforderungen zugeschnitten",
+    title: "Passende Anfrage",
+    description: "Maße, Wünsche und offene Fragen werden so vorbereitet, dass der nächste Schritt klar ist",
   },
   {
     icon: Shield,
-    title: "Qualität Made in Germany",
-    description: "Überwiegend hochwertige deutsche Qualitätsprodukte",
+    title: "Verständliche Auswahl",
+    description: "Sie bekommen einfache Erklärungen zu Systemen, Nutzen und möglichen Varianten",
   },
   {
     icon: FileText,
-    title: "Transparente Angebote",
-    description: "Faire Preise ohne versteckte Kosten",
+    title: "Klare Rückmeldung",
+    description: "Nach Ihrer Anfrage wissen Sie, welche Informationen noch fehlen und wie es weitergeht",
   },
   {
     icon: Users,
-    title: "Betreuung bis zur Umsetzung",
-    description: "Von der Planung bis zur fertigen Installation an Ihrer Seite",
+    title: "Fester Ansprechpartner",
+    description: "Sie sprechen mit einem direkten Kontakt statt mit anonymen Formularwegen",
   },
 ];
 
@@ -34,10 +34,10 @@ export function TrustSection() {
       <div className="container-width">
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl sm:text-4xl font-semibold text-foreground mb-4">
-            Warum Fachberatung Binder?
+            Warum Binder Hausberatung?
           </h2>
           <p className="font-body text-muted-foreground max-w-2xl mx-auto">
-            Vertrauen Sie auf persönliche Beratung und Qualität, die überzeugt.
+            Schnell verstehen, was möglich ist, welche Lösung passt und welcher nächste Schritt sinnvoll ist.
           </p>
         </div>
 

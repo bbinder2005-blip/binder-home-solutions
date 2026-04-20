@@ -16,12 +16,12 @@ const services = [
     title: "Terrassendächer",
     subtitle: "Aluminium & Glas",
     image: terraceRoofImage,
-    description: "Genießen Sie Ihre Terrasse bei jedem Wetter. Unsere hochwertigen Terrassendächer aus Aluminium und Glas bieten optimalen Schutz und schaffen zusätzlichen Wohnraum im Freien.",
+    description: "Ein Terrassendach kann Terrasse und Haus besser nutzbar machen. In der Beratung klären wir, welche Dachform, Beschattung und Seitenelemente zu Ihrem Objekt passen.",
     features: [
       "Zuverlässiger Wetter- und Sonnenschutz",
       "Individuelle Maßanfertigung nach Ihren Wünschen",
       "Erweiterbar mit Beschattung und Seitenelementen",
-      "Hochwertige Materialien für langlebige Konstruktion",
+      "Materialien und Varianten einfach erklärt",
       "Verschiedene Designs und Farboptionen",
     ],
   },
@@ -30,7 +30,7 @@ const services = [
     title: "Pergola-Markisen & flexible Beschattungssysteme",
     subtitle: "Moderne Sonnenschutzlösungen",
     image: pergolaImage,
-    description: "Flexible Beschattung für Ihre Terrasse oder Ihren Garten. Pergola-Markisen kombinieren elegantes Design mit praktischem Nutzen und lassen sich perfekt in bestehende Strukturen integrieren.",
+    description: "Pergola-Markisen helfen, Terrasse und Garten einfacher vor Sonne, Hitze und leichtem Regen zu schützen. Wir klären, welches System zu Fläche, Nutzung und Wunschkomfort passt.",
     features: [
       "Effektiver Schutz vor Sonne, Hitze und leichtem Regen",
       "Moderne Steuerung – manuell oder elektrisch",
@@ -44,7 +44,7 @@ const services = [
     title: "Markisen",
     subtitle: "Klassischer Sonnenschutz",
     image: markiseImage,
-    description: "Unsere hochwertigen Markisen bieten zuverlässigen Sonnenschutz für Terrassen, Balkone und Fensterfronten. Von der klassischen Gelenkarmmarkise bis zur modernen Kassettenmarkise.",
+    description: "Markisen sind ein klarer Weg zu mehr Schatten auf Terrasse, Balkon oder an großen Fensterflächen. In der Beratung werden Bauart, Tuch, Bedienung und Zubehör verständlich eingeordnet.",
     features: [
       "Effektiver Schutz vor Sonne und UV-Strahlung",
       "Elektrischer Antrieb mit Fernbedienung",
@@ -58,7 +58,7 @@ const services = [
     title: "Wintergartenbeschattung",
     subtitle: "Innen- & Außenbeschattung",
     image: wintergartenImage,
-    description: "Optimieren Sie das Klima in Ihrem Wintergarten mit professioneller Beschattung. Ob Innen- oder Außenbeschattung – wir finden die passende Lösung für Ihren Wintergarten.",
+    description: "Wintergärten brauchen guten Hitzeschutz und angenehmes Licht. Gemeinsam klären wir, ob Innen- oder Außenbeschattung sinnvoll ist und welche Bedienung zum Alltag passt.",
     features: [
       "Effektiver Hitzeschutz im Sommer",
       "Blendschutz für angenehmes Arbeiten und Wohnen",
@@ -72,7 +72,7 @@ const services = [
     title: "ZIP-Screens & Senkrechtmarkisen",
     subtitle: "Moderne Fassadenbeschattung",
     image: zipScreenImage,
-    description: "ZIP-Screens bieten maximalen Sonnenschutz bei minimaler Windanfälligkeit. Das innovative Führungssystem sorgt für eine straffe Bespannung auch bei Wind.",
+    description: "ZIP-Screens und Senkrechtmarkisen helfen bei Sonne, Sichtschutz und großen Glasflächen. Die Beratung zeigt, wann diese Lösung sinnvoll ist und welche Varianten möglich sind.",
     features: [
       "Effektiver Sonnen-, Sicht- und Windschutz",
       "Ideal für große Glasflächen",
@@ -86,7 +86,7 @@ const services = [
     title: "Dachfenster",
     subtitle: "Licht unter dem Dach",
     image: dachfensterImage,
-    description: "Moderne Dachfenster bringen natürliches Licht in Ihre Dachräume. Ob Neubau oder Renovierung – wir finden die passende Lösung für jede Dachkonstruktion.",
+    description: "Dachfenster bringen Licht und Luft in Räume unter dem Dach. In der Beratung geht es um Größe, Öffnung, Wärmeschutz, Hitzeschutz und passende Verdunkelung.",
     features: [
       "Maximaler Lichteinfall durch große Glasflächen",
       "3-fach Wärmeschutzverglasung",
@@ -100,7 +100,7 @@ const services = [
     title: "Rollläden & Insektenschutz",
     subtitle: "Schutz & Komfort",
     image: rolladenImage,
-    description: "Rollläden bieten vielseitigen Schutz für Ihr Zuhause – von Wärmedämmung über Schallschutz bis hin zu erhöhter Sicherheit. Ergänzend bieten wir passende Insektenschutzlösungen.",
+    description: "Rollläden und Insektenschutz können Alltag, Schlaf und Raumklima verbessern. Wir klären, ob Nachrüstung, Austausch oder Ergänzung zu Ihren Fenstern passt.",
     features: [
       "Wärme- und Kälteschutz für Energieeffizienz",
       "Effektiver Schallschutz",
@@ -114,13 +114,13 @@ const services = [
     title: "Fenster & Türen",
     subtitle: "Optional im Beratungsgespräch",
     image: fensterImage,
-    description: "Fenster- und Türlösungen bieten wir optional im Rahmen einer persönlichen Fachberatung an. Sprechen Sie mich gerne an, wenn Sie auch in diesem Bereich Beratung wünschen.",
+    description: "Fenster und Türen sind optionale Beratungsthemen, wenn sie zu Ihrem Hausprojekt gehören. Sprechen Sie mich an, wenn Bestand, Sicherheit oder Energie ein Thema sind.",
     features: [
       "Hohe Energieeffizienz durch moderne Verglasung",
       "Erhöhte Sicherheit durch spezielle Beschläge",
       "Individuelles Design passend zur Architektur",
       "Verschiedene Materialien: Kunststoff, Aluminium, Holz",
-      "Professionelle Montage durch erfahrene Partner",
+      "Klärung des passenden nächsten Schritts",
     ],
     optional: true,
   },
@@ -133,10 +133,10 @@ const Leistungen = () => {
       <section className="section-padding bg-primary pt-32">
         <div className="container-width text-center">
           <h1 className="font-display text-4xl sm:text-5xl font-semibold text-primary-foreground mb-4">
-            Unsere Leistungen
+            Beratungsthemen
           </h1>
           <p className="font-body text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Hochwertige Lösungen für Sonnen- und Wetterschutz – individuell geplant und professionell umgesetzt
+            Verständliche Beratung zu Sonnenschutz, Wetterschutz, Licht, Sichtschutz und Sicherheit rund ums Haus.
           </p>
         </div>
       </section>

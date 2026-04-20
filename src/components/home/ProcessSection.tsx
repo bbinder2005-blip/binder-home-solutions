@@ -1,29 +1,29 @@
-import { Phone, Home, FileEdit, Wrench } from "lucide-react";
+import { CalendarCheck, FileText, Home, Phone } from "lucide-react";
 
 const steps = [
   {
     number: "01",
     icon: Phone,
-    title: "Kontaktaufnahme",
-    description: "Rufen Sie an oder schreiben Sie mir per WhatsApp oder E-Mail",
+    title: "Anfrage stellen",
+    description: "Rufen Sie an, schreiben Sie per WhatsApp oder senden Sie eine kurze Nachricht",
   },
   {
     number: "02",
     icon: Home,
-    title: "Kostenlose Fachberatung vor Ort",
-    description: "Ich besuche Sie und analysiere Ihre Wünsche und Gegebenheiten",
+    title: "Bedarf klären",
+    description: "Wir besprechen, ob es um Sonne, Wetter, Sichtschutz, Licht oder Sicherheit geht",
   },
   {
     number: "03",
-    icon: FileEdit,
-    title: "Individuelle Planung & Angebot",
-    description: "Sie erhalten ein maßgeschneidertes, transparentes Angebot",
+    icon: CalendarCheck,
+    title: "Termin abstimmen",
+    description: "Der passende Zeitpunkt für Rückruf oder Beratung wird ohne langes Hin und Her geklärt",
   },
   {
     number: "04",
-    icon: Wrench,
-    title: "Umsetzung & Nachbetreuung",
-    description: "Professionelle Montage durch geprüfte Partner und Betreuung danach",
+    icon: FileText,
+    title: "Nächster Schritt",
+    description: "Sie erhalten eine verständliche Empfehlung für die weitere Planung",
   },
 ];
 
@@ -33,10 +33,10 @@ export function ProcessSection() {
       <div className="container-width">
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl sm:text-4xl font-semibold text-foreground mb-4">
-            So einfach geht's
+            So läuft die Anfrage ab
           </h2>
           <p className="font-body text-muted-foreground max-w-2xl mx-auto">
-            In vier Schritten zu Ihrer individuellen Lösung
+            Weniger Hin und Her, mehr Klarheit für Ihr Hausprojekt
           </p>
         </div>
 

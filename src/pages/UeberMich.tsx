@@ -12,7 +12,7 @@ const values = [{
 }, {
   icon: Users,
   title: "Verlässlich",
-  description: "Von der ersten Idee bis zur fertigen Umsetzung bin ich Ihr fester Ansprechpartner"
+  description: "Von der ersten Anfrage bis zum nächsten Schritt haben Sie einen direkten Ansprechpartner"
 }];
 const UeberMich = () => {
   return <Layout>
@@ -23,7 +23,7 @@ const UeberMich = () => {
             Über mich
           </h1>
           <p className="font-body text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Persönliche Fachberatung für Ihr Zuhause
+            Persönliche Beratung für Ihr Zuhause
           </p>
         </div>
       </section>
@@ -33,10 +33,10 @@ const UeberMich = () => {
         <div className="container-width">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl sm:text-4xl font-semibold text-foreground mb-4">
-              Unser Team
+              Ihre Ansprechpartner
             </h2>
             <p className="font-body text-muted-foreground max-w-2xl mx-auto">
-              Persönliche Beratung von erfahrenen Fachberatern
+              Direkte Beratung ohne komplizierte Umwege
             </p>
           </div>
 
@@ -74,18 +74,16 @@ const UeberMich = () => {
             
             <div className="space-y-4 font-body text-muted-foreground">
               <p>
-                Als unabhängige Fachberater ist es unser Ziel, für Sie die beste Lösung zu finden – 
-                nicht die teuerste oder einfachste, sondern die, die wirklich zu Ihren Bedürfnissen passt.
+                Als persönliche Ansprechpartner ist es unser Ziel, Ihr Anliegen verständlich einzuordnen
+                und den passenden nächsten Schritt für Ihr Hausprojekt zu klären.
               </p>
               <p>
-                Wir nehmen uns Zeit für jedes Projekt, hören genau zu und beraten ehrlich. 
-                Denn nur wenn wir Ihre Wünsche und die Gegebenheiten vor Ort wirklich verstehen, 
-                können wir Ihnen eine Lösung empfehlen, mit der Sie langfristig zufrieden sind.
+                Wir nehmen uns Zeit, hören genau zu und erklären die wichtigsten Unterschiede einfach. 
+                Erst wenn Wünsche, Maße und die Situation vor Ort klar sind, lässt sich sinnvoll entscheiden.
               </p>
               <p>
-                Von der ersten Kontaktaufnahme über die Planung bis hin zur fertigen Umsetzung 
-                sind wir Ihre persönlichen Ansprechpartner. Auch nach Abschluss des Projekts 
-                stehen wir Ihnen bei Fragen gerne zur Verfügung.
+                Von der ersten Kontaktaufnahme über Rückfragen bis zur weiteren Abstimmung
+                bleiben wir erreichbar. So entsteht aus einer kurzen Anfrage ein klarer Weg nach vorn.
               </p>
             </div>
 

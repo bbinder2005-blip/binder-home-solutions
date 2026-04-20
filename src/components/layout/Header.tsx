@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { businessName, businessPhone } from "@/config/contact";
 
 const navigation = [
   { name: "Start", href: "/" },
@@ -20,7 +21,7 @@ export function Header() {
       <nav className="container-width section-padding py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <span className="font-display text-xl md:text-2xl font-semibold text-foreground">
-            Fachberatung <span className="text-accent">Binder</span>
+            {businessName}
           </span>
         </Link>
 
@@ -44,7 +45,7 @@ export function Header() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
           <Button variant="accent" size="default" asChild>
-            <a href="tel:+4915111073043" className="flex items-center gap-2">
+            <a href={`tel:${businessPhone}`} className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
               Beratung anfragen
             </a>
@@ -81,7 +82,7 @@ export function Header() {
             ))}
             <div className="pt-4 border-t border-border">
               <Button variant="accent" size="lg" className="w-full" asChild>
-                <a href="tel:+4915111073043" className="flex items-center justify-center gap-2">
+                <a href={`tel:${businessPhone}`} className="flex items-center justify-center gap-2">
                   <Phone className="w-4 h-4" />
                   Beratung anfragen
                 </a>

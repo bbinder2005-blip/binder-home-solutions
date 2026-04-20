@@ -58,7 +58,7 @@ const Datenschutz = () => {
             <p className="text-muted-foreground">
               Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br /><br />
               Benedikt Binder<br />
-              Fachberatung Binder<br />
+              Binder Hausberatung<br />
               Telefon: 0151 11073043<br />
               E-Mail: info@fachberatung-binder.de
             </p>
@@ -75,6 +75,16 @@ const Datenschutz = () => {
               dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks 
               Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. 
               Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+            </p>
+
+            <h3 className="font-display text-xl font-medium text-foreground mt-6 mb-3">
+              CRM und Online-Terminbuchung
+            </h3>
+            <p className="text-muted-foreground">
+              Wenn ein CRM-Formular oder eine Online-Terminbuchung eingebunden wird, werden die dort
+              eingegebenen Daten zur Bearbeitung Ihrer Anfrage und zur Terminabstimmung verarbeitet.
+              Die konkreten Anbieter und zusätzlichen Pflichtangaben müssen vor der Live-Schaltung
+              entsprechend ergänzt werden.
             </p>
 
             <h3 className="font-display text-xl font-medium text-foreground mt-6 mb-3">
