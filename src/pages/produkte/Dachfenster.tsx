@@ -10,17 +10,17 @@ import img2 from "@/assets/products/dachfenster-2.jpg";
 import img3 from "@/assets/products/dachfenster-3.jpg";
 
 const images = [
-  { src: img1, label: "Dachfenster mit Rollladen" },
-  { src: img2, label: "Dachfenster Innenansicht" },
-  { src: img3, label: "Dachfenster mit Verdunkelung" },
+  { src: img1, label: "RENOROLL – Dachfenster mit integriertem Rollladen" },
+  { src: img2, label: "RENOLUX – Kunststoff-Renovierungsdachfenster" },
+  { src: img3, label: "Dachfenster mit Verdunkelungsrollo" },
 ];
 
 const features = [
-  "Maximaler Lichteinfall durch große Glasflächen",
-  "3-fach Wärmeschutzverglasung",
-  "Schwingfenster, Klapp-Schwing-Fenster oder Ausstiegsfenster",
-  "Integrierte Lüftungsklappe für Frischluft",
-  "Elektrische Öffnung mit Regensensor optional",
+  "RENOLUX: Renovierungsdachfenster aus Kunststoff – maßgefertigt",
+  "RENOROLL: Dachfenster mit direkt integriertem Aluminium-Rollladen",
+  "Oberer Drehpunkt für maximale Kopffreiheit beim Öffnen",
+  "Stufenloses Öffnen mit patentierter Federbremse",
+  "Optional mit Insektenschutzrollo und Notausstiegsfunktion",
   "Passende Rollläden und Verdunkelungen erhältlich",
 ];
 
@@ -102,7 +102,7 @@ export default function Dachfenster() {
             <div className="space-y-8">
               <div>
                 <span className="text-accent font-medium text-sm uppercase tracking-wider">
-                  Licht unter dem Dach
+                  RENOLUX & RENOROLL
                 </span>
                 <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mt-2">
                   Dachfenster
@@ -110,17 +110,19 @@ export default function Dachfenster() {
               </div>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Dachfenster bringen Licht und frische Luft in Räume unter dem Dach.
-                In der Beratung geht es um Größe, Öffnungsart, Wärmeschutz
-                und passende Verdunkelung – damit das Dachfenster zu Ihrem
-                Raum und Ihrer Nutzung passt.
+                Renovierungsdachfenster sind auf das genaue Maß des vorhandenen
+                Fensters abgestimmt und lassen sich ohne große Umbauarbeiten
+                einsetzen. In der Beratung klären wir, welches Modell zu Ihrer
+                Dachlage, Raumnutzung und Ihrem Budget passt.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Schwingfenster, Klapp-Schwing-Fenster und Ausstiegsfenster
-                haben jeweils Vor- und Nachteile je nach Raumhöhe und Lage.
-                Ergänzungen wie Rollläden, Verdunkelungen oder Insektenschutz
-                lassen sich direkt auf das Fenstermaß abstimmen.
+                Das RENOLUX ist das klassische Kunststoff-Dachfenster mit
+                obenliegendem Drehpunkt für maximale Kopffreiheit und
+                patentierter Federbremse – es bleibt in jeder Position stehen.
+                Das RENOROLL kombiniert Dachfenster und Aluminium-Rollladen
+                in einem System. Insektenschutz und Verdunkelung lassen
+                sich ergänzen.
               </p>
 
               <div className="space-y-4">

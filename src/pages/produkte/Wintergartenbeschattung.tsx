@@ -10,18 +10,18 @@ import img2 from "@/assets/test/wintergarten-alt2.jpg";
 import img3 from "@/assets/test/wintergarten-alt3.jpg";
 
 const images = [
-  { src: img1, label: "Wintergarten mit Innenbeschattung" },
-  { src: img2, label: "Außenbeschattung am Glasdach" },
-  { src: img3, label: "Wintergarten mit Beschattung" },
+  { src: img1, label: "Wintergartenmarkise WGB PLUS – Aufdachbeschattung" },
+  { src: img2, label: "WGB UNTERGLAS – Beschattung unter dem Glasdach" },
+  { src: img3, label: "Beschattung am Terrassendach" },
 ];
 
 const features = [
-  "Innen- und Außenbeschattung verfügbar",
-  "Reflexionsgewebe für optimale Wärmeregulierung",
-  "Motorisierte Steuerung per Fernbedienung",
-  "Smart-Home-Integration möglich",
-  "UV-Schutz bis 97%",
-  "Große Farbauswahl für individuelle Gestaltung",
+  "WGB PLUS: Beschattung auf dem Glasdach – maximale Hitzereduktion",
+  "WGB UNTERGLAS: Beschattung unter dem Glas – ideal bei wenig Platz",
+  "Spezialgewebe reflektiert ca. 67 % der Sonneneinstrahlung",
+  "Maßgefertigte Aluminiumrahmen in vielen Farben",
+  "Bedienung per Handkurbel, Motor oder Fernbedienung",
+  "Schutz vor UV-Strahlung und Möbelbleichen",
 ];
 
 export default function Wintergartenbeschattung() {
@@ -102,7 +102,7 @@ export default function Wintergartenbeschattung() {
             <div className="space-y-8">
               <div>
                 <span className="text-accent font-medium text-sm uppercase tracking-wider">
-                  Optimales Raumklima
+                  WGB PLUS & WGB UNTERGLAS
                 </span>
                 <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mt-2">
                   Wintergartenbeschattung
@@ -110,17 +110,18 @@ export default function Wintergartenbeschattung() {
               </div>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Wintergärten ohne Beschattung überhitzen im Sommer schnell.
-                In der Beratung klären wir, ob Innen- oder Außenbeschattung für
-                Ihre Konstruktion sinnvoller ist und welches System im Alltag
-                am besten funktioniert.
+                Glasdächer und Wintergärten heizen sich ohne Beschattung im Sommer
+                stark auf. In der Beratung klären wir, welches System zu Ihrem
+                Glasdach passt – ob Beschattung auf dem Glas (WGB PLUS) oder
+                direkt darunter (WGB UNTERGLAS).
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Außenbeschattungen reduzieren die Wärme direkt am Glasdach –
-                das ist effektiver als Innenlösungen. Spezielle Reflexionsgewebe
-                halten die Raumtemperatur angenehm. Für vorhandene Konstruktionen
-                gibt es maßgefertigte Lösungen für Dach- und Seitenflächen.
+                Die WGB PLUS wird auf dem Glasdach montiert und hält die Hitze
+                bereits außen ab – das ist die effektivste Lösung. Die WGB UNTERGLAS
+                ist ideal für gut durchlüftete Terrassendächer oder wenn wenig
+                Platzt auf dem Dach vorhanden ist. Beide Systeme werden
+                maßgenau gefertigt und lassen sich stufenlos bedienen.
               </p>
 
               <div className="space-y-4">

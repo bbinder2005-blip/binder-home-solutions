@@ -10,18 +10,18 @@ import img2 from "@/assets/test/zip-alt2.jpg";
 import img3 from "@/assets/test/zip-alt3.jpg";
 
 const images = [
-  { src: img1, label: "ZIP-Screen am Einfamilienhaus" },
-  { src: img2, label: "Senkrechtmarkise an der Fassade" },
-  { src: img3, label: "ZIP-Screen auf der Terrasse" },
+  { src: img1, label: "ZIP-Screen an der Glasfront – Einfamilienhaus" },
+  { src: img2, label: "Außenliegender ZIP-Screen am Fenster" },
+  { src: img3, label: "ZIP-Screen als Sichtschutz auf der Terrasse" },
 ];
 
 const features = [
-  "Windstabil durch seitliche ZIP-Führungsschiene",
-  "Effektiver Blend- und Hitzeschutz",
-  "Sichtschutz von außen bei Durchsicht nach innen",
-  "Verschiedene Transparenzgrade wählbar",
-  "Leiser Motorantrieb",
-  "Ideal für große Glas- und Terrassenflächen",
+  "Seitliche ZIP-Führungsschiene hält das Tuch auch bei Wind stabil",
+  "High-Tech-Polyestergewebe reflektiert Sonnenstrahlung",
+  "Sichtschutz von außen, Durchsicht von innen tagsüber erhalten",
+  "11 Tuchfarben, Gehäuse in allen RAL-Farben verfügbar",
+  "Elektromotor serienmäßig, Solar-Antrieb und Smart-Home optional",
+  "Auch als Insektenschutz wirksam durch engmaschiges Gewebe",
 ];
 
 export default function ZipScreens() {
@@ -102,7 +102,7 @@ export default function ZipScreens() {
             <div className="space-y-8">
               <div>
                 <span className="text-accent font-medium text-sm uppercase tracking-wider">
-                  Innovative Senkrechtmarkisen
+                  Außenliegender Sonnen- & Sichtschutz
                 </span>
                 <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mt-2">
                   ZIP-Screens
@@ -110,17 +110,20 @@ export default function ZipScreens() {
               </div>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                ZIP-Screens sind Senkrechtmarkisen mit seitlicher Führungsschiene –
-                sie bleiben auch bei Wind stabil und schließen sauber ab.
-                In der Beratung klären wir, wann diese Lösung sinnvoll ist und
-                welche Tuch-Transparenz zu Ihrer Situation passt.
+                Der ZIP-Screen ist eine außenliegende textile Senkrechtmarkise
+                mit seitlicher Führungsschiene. Das Gewebe bleibt dadurch auch
+                bei Wind straff und schließt sauber ab – ohne Flattern oder
+                Lücken an den Seiten.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Screen-Gewebe reduzieren Blendung und Raumtemperatur spürbar,
-                ohne die Außensicht vollständig zu nehmen. Je nach Transparenzgrad
-                bleibt die Aussicht erhalten. ZIP-Screens eignen sich besonders
-                für große Glasflächen, Wintergärten und Terrassenöffnungen.
+                High-Tech-Polyestergewebe reflektiert die Sonneneinstrahlung
+                und hält Innenräume spürbar kühler. Tagsüber bleibt die
+                Durchsicht nach außen erhalten, von außen ist der Raum jedoch
+                nicht einsehbar. ZIP-Screens passen besonders gut zu großen
+                Glasfronten, Terrassenöffnungen und Wintergärten. In der
+                Beratung klären wir, welcher Transparenzgrad und welche Farbe
+                zu Ihrem Objekt passt.
               </p>
 
               <div className="space-y-4">
