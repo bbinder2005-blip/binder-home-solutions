@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Phone } from "lucide-react";
+import { CalendarCheck, Home } from "lucide-react";
 import heroImage from "@/assets/test/terrace-alt2.jpg";
-import { businessName, businessPhone, whatsappUrl } from "@/config/contact";
+import { bookingSectionPath, businessName, calendlyPhoneUrl, isExternalUrl } from "@/config/contact";
 
 export function HeroSection() {
-  const whatsappLink = whatsappUrl("Hallo, ich interessiere mich für eine Beratung zu Sonnenschutz oder Bauelementen.");
+  const bookingHref = calendlyPhoneUrl || bookingSectionPath;
+  const bookingTarget = isExternalUrl(bookingHref) ? "_blank" : undefined;
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
@@ -29,25 +30,23 @@ export function HeroSection() {
           </h1>
           
           <p className="font-body text-lg sm:text-xl text-primary-foreground/80 mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Einfache Orientierung für Terrassendach, Markise, Rollladen, Dachfenster und Insektenschutz in Berlin und Brandenburg.
+            Buchen Sie zuerst einen kurzen Telefontermin. Danach lässt sich ein Haustermin gezielt vorbereiten.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up" style={{ animationDelay: "0.2s" }}>
             <Button variant="hero" size="xl" asChild>
-              <a href={`tel:${businessPhone}`} className="flex items-center gap-2">
-                <Phone className="w-5 h-5" />
-                Kostenlose Beratung anfragen
+              <a href={bookingHref} target={bookingTarget} rel={bookingTarget ? "noopener noreferrer" : undefined} className="flex items-center gap-2">
+                <CalendarCheck className="w-5 h-5" />
+                Telefontermin buchen
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
               <a
-                href={whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={bookingSectionPath}
                 className="flex items-center gap-2"
               >
-                <MessageCircle className="w-5 h-5" />
-                Kontakt via WhatsApp
+                <Home className="w-5 h-5" />
+                Ablauf ansehen
               </a>
             </Button>
           </div>

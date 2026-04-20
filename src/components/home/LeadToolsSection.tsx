@@ -1,26 +1,29 @@
 import { CalendarCheck, MailCheck, UsersRound } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { businessEmail, calendlyUrl } from "@/config/contact";
+import { bookingSectionPath, calendlyPhoneUrl, isExternalUrl } from "@/config/contact";
 
 const tools = [
   {
     icon: UsersRound,
-    title: "Anfrage erfassen",
-    description: "Ihre Nachricht landet gesammelt in der Kontaktstrecke und kann im CRM nachverfolgt werden.",
+    title: "Telefontermin wählen",
+    description: "Der erste Termin klärt Thema, Ort, Fotos und grobe Maße, bevor Zeit vor Ort eingeplant wird.",
   },
   {
     icon: MailCheck,
-    title: "Antwort vorbereiten",
-    description: "Nach der Anfrage folgt eine klare Rückmeldung mit den nächsten Schritten.",
+    title: "Haustermin vorbereiten",
+    description: "Wenn es passt, wird der Vor-Ort-Termin gezielt vorbereitet statt spontan geraten.",
   },
   {
     icon: CalendarCheck,
-    title: "Termin einfacher finden",
-    description: "Telefontermin oder Vor-Ort-Beratung lassen sich ohne langes Hin und Her abstimmen.",
+    title: "Nachfragen sammeln",
+    description: "Weitere Fragen, Fotos oder Details können nach dem Termin ergänzt werden.",
   },
 ];
 
 export function LeadToolsSection() {
+  const bookingHref = calendlyPhoneUrl || bookingSectionPath;
+  const bookingTarget = isExternalUrl(bookingHref) ? "_blank" : undefined;
+
   return (
     <section className="section-padding bg-background">
       <div className="container-width">
@@ -30,15 +33,15 @@ export function LeadToolsSection() {
               Schnell zur Beratung
             </p>
             <h2 className="font-display text-3xl sm:text-4xl font-semibold text-foreground mb-4">
-              Anfrage stellen, Rückmeldung bekommen, Termin klären
+              Telefontermin buchen, Haustermin besser vorbereiten
             </h2>
             <p className="font-body text-muted-foreground mb-6">
-              Die Kontaktstrecke ist auf einfache Wörter und klare Schritte ausgelegt. So wissen Interessenten sofort,
-              ob es um Beratung für Sonnenschutz, Terrassendach, Markise, Rollladen oder Dachfenster geht.
+              Die Kontaktstrecke beginnt bewusst mit einem kurzen Telefontermin. So ist schnell klar,
+              ob ein Haustermin sinnvoll ist und welche Informationen vorher gebraucht werden.
             </p>
             <Button variant="accent" size="lg" asChild>
-              <a href={calendlyUrl || `mailto:${businessEmail}?subject=Terminwunsch%20Beratung`}>
-                {calendlyUrl ? "Termin online buchen" : "Termin anfragen"}
+              <a href={bookingHref} target={bookingTarget} rel={bookingTarget ? "noopener noreferrer" : undefined}>
+                Telefontermin online buchen
               </a>
             </Button>
           </div>

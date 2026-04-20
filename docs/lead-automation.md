@@ -25,13 +25,17 @@ Empfohlene Formularfelder:
 
 ## 2. Calendly verbinden
 
-1. In Calendly einen Termin-Typ erstellen, zum Beispiel `Kostenlose Beratung`.
-2. Terminlänge: 20 bis 30 Minuten.
-3. Den Calendly-Link in der Deployment-Umgebung setzen:
+1. In Calendly zuerst einen Termin-Typ erstellen: `Telefonische Erstberatung`.
+2. Terminlänge: 15 bis 20 Minuten.
+3. Optional einen zweiten Termin-Typ erstellen: `Haustermin vor Ort`.
+4. Den Telefontermin als Haupt-Link in der Deployment-Umgebung setzen:
 
 ```env
-VITE_CALENDLY_URL=https://calendly.com/dein-name/kostenlose-beratung
+VITE_CALENDLY_PHONE_URL=https://calendly.com/dein-name/telefonische-erstberatung
+VITE_CALENDLY_HOME_URL=https://calendly.com/dein-name/haustermin
 ```
+
+Empfehlung: den Haustermin nicht als ersten Hauptkontakt bewerben. Erst im Telefontermin klären, ob ein Vor-Ort-Termin sinnvoll ist.
 
 ## 3. Automatische E-Mail-Sequenz
 

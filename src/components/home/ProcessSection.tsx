@@ -4,26 +4,26 @@ const steps = [
   {
     number: "01",
     icon: Phone,
-    title: "Anfrage stellen",
-    description: "Rufen Sie an, schreiben Sie per WhatsApp oder senden Sie eine kurze Nachricht",
+    title: "Telefontermin wählen",
+    description: "Sie buchen einen kurzen Termin im Kalender, ohne Hin und Her",
   },
   {
     number: "02",
     icon: Home,
     title: "Bedarf klären",
-    description: "Wir besprechen, ob es um Sonne, Wetter, Sichtschutz, Licht oder Sicherheit geht",
+    description: "Wir besprechen Thema, Ort, Fotos und grobe Maße",
   },
   {
     number: "03",
     icon: CalendarCheck,
-    title: "Termin abstimmen",
-    description: "Der passende Zeitpunkt für Rückruf oder Beratung wird ohne langes Hin und Her geklärt",
+    title: "Haustermin vorbereiten",
+    description: "Wenn es passt, wird ein Vor-Ort-Termin gezielt geplant",
   },
   {
     number: "04",
     icon: FileText,
     title: "Nächster Schritt",
-    description: "Sie erhalten eine verständliche Empfehlung für die weitere Planung",
+    description: "Sie wissen, welche Lösung und welcher Ablauf sinnvoll sind",
   },
 ];
 

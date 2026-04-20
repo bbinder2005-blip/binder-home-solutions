@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
-import { businessEmail, businessName, businessPhone, businessPhoneLabel } from "@/config/contact";
+import { CalendarCheck, Mail, MapPin } from "lucide-react";
+import { bookingSectionPath, businessEmail, businessName } from "@/config/contact";
 
 export function Footer() {
   return (
@@ -17,9 +17,9 @@ export function Footer() {
               Direkt, einfach und mit klarem nächsten Schritt.
             </p>
             <div className="flex flex-col gap-3">
-              <a href={`tel:${businessPhone}`} className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                <Phone className="w-4 h-4" />
-                <span className="font-body text-sm">{businessPhoneLabel}</span>
+              <a href={bookingSectionPath} className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                <CalendarCheck className="w-4 h-4" />
+                <span className="font-body text-sm">Telefontermin online buchen</span>
               </a>
               <a href={`mailto:${businessEmail}`} className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">
                 <Mail className="w-4 h-4" />

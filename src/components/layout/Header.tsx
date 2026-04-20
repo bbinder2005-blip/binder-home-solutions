@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone } from "lucide-react";
+import { CalendarCheck, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { businessName, businessPhone } from "@/config/contact";
+import { bookingSectionPath, businessName, calendlyPhoneUrl, isExternalUrl } from "@/config/contact";
 
 const navigation = [
   { name: "Start", href: "/" },
@@ -15,6 +15,8 @@ const navigation = [
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const bookingHref = calendlyPhoneUrl || bookingSectionPath;
+  const bookingTarget = isExternalUrl(bookingHref) ? "_blank" : undefined;
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
@@ -45,9 +47,9 @@ export function Header() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
           <Button variant="accent" size="default" asChild>
-            <a href={`tel:${businessPhone}`} className="flex items-center gap-2">
-              <Phone className="w-4 h-4" />
-              Beratung anfragen
+            <a href={bookingHref} target={bookingTarget} rel={bookingTarget ? "noopener noreferrer" : undefined} className="flex items-center gap-2">
+              <CalendarCheck className="w-4 h-4" />
+              Termin buchen
             </a>
           </Button>
         </div>
@@ -82,9 +84,9 @@ export function Header() {
             ))}
             <div className="pt-4 border-t border-border">
               <Button variant="accent" size="lg" className="w-full" asChild>
-                <a href={`tel:${businessPhone}`} className="flex items-center justify-center gap-2">
-                  <Phone className="w-4 h-4" />
-                  Beratung anfragen
+                <a href={bookingHref} target={bookingTarget} rel={bookingTarget ? "noopener noreferrer" : undefined} className="flex items-center justify-center gap-2">
+                  <CalendarCheck className="w-4 h-4" />
+                  Termin buchen
                 </a>
               </Button>
             </div>

@@ -136,16 +136,10 @@ export default function Dachfenster() {
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button variant="accent" size="lg" asChild>
-                  <Link to="/kontakt">Kostenlose Beratung anfragen</Link>
+                  <Link to="/kontakt#termin">Telefontermin buchen</Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a 
-                    href="https://wa.me/4915111073043?text=Hallo%2C%20ich%20interessiere%20mich%20f%C3%BCr%20Dachfenster%20und%20h%C3%A4tte%20gerne%20eine%20Beratung."
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    WhatsApp schreiben
-                  </a>
+                  <Link to="/kontakt#termin">Haustermin vorbereiten</Link>
                 </Button>
               </div>
             </div>

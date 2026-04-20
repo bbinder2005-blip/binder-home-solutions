@@ -1,18 +1,27 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MessageCircle, Mail } from "lucide-react";
-import { businessEmail, businessPhone, businessPhoneLabel, whatsappUrl } from "@/config/contact";
+import { CalendarCheck, Home, Mail } from "lucide-react";
+import {
+  bookingSectionPath,
+  businessEmail,
+  calendlyHomeUrl,
+  calendlyPhoneUrl,
+  isExternalUrl,
+} from "@/config/contact";
 
 export function CTASection() {
-  const whatsappLink = whatsappUrl("Hallo, ich möchte eine Beratung für mein Hausprojekt anfragen.");
+  const phoneBookingHref = calendlyPhoneUrl || bookingSectionPath;
+  const homeBookingHref = calendlyHomeUrl || bookingSectionPath;
+  const phoneBookingTarget = isExternalUrl(phoneBookingHref) ? "_blank" : undefined;
+  const homeBookingTarget = isExternalUrl(homeBookingHref) ? "_blank" : undefined;
 
   return (
     <section className="section-padding bg-accent">
       <div className="container-width text-center">
         <h2 className="font-display text-3xl sm:text-4xl font-semibold text-accent-foreground mb-4">
-          Beratung einfach anfragen
+          Beratungstermin einfach buchen
         </h2>
         <p className="font-body text-accent-foreground/80 max-w-2xl mx-auto mb-8">
-          Kurz schildern, worum es geht. Ich melde mich mit dem passenden nächsten Schritt für Berlin oder Brandenburg.
+          Erst kurz telefonisch klären, danach den passenden Haustermin vorbereiten.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -22,24 +31,25 @@ export function CTASection() {
             className="bg-accent-foreground text-accent hover:bg-accent-foreground/90"
             asChild
           >
-            <a href={`tel:${businessPhone}`} className="flex items-center gap-2">
-              <Phone className="w-5 h-5" />
-              {businessPhoneLabel}
+            <a href={phoneBookingHref} target={phoneBookingTarget} rel={phoneBookingTarget ? "noopener noreferrer" : undefined} className="flex items-center gap-2">
+              <CalendarCheck className="w-5 h-5" />
+              Telefontermin buchen
             </a>
           </Button>
           <Button
-            variant="whatsapp"
+            variant="secondary"
             size="xl"
+            className="bg-accent-foreground text-accent hover:bg-accent-foreground/90"
             asChild
           >
             <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={homeBookingHref}
+              target={homeBookingTarget}
+              rel={homeBookingTarget ? "noopener noreferrer" : undefined}
               className="flex items-center gap-2"
             >
-              <MessageCircle className="w-5 h-5" />
-              WhatsApp
+              <Home className="w-5 h-5" />
+              Haustermin vorbereiten
             </a>
           </Button>
           <Button

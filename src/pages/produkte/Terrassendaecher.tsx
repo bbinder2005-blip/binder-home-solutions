@@ -136,10 +136,10 @@ export default function Terrassendaecher() {
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button variant="accent" size="lg" asChild>
-                  <Link to="/kontakt">Kostenlose Beratung anfragen</Link>
+                  <Link to="/kontakt#termin">Telefontermin buchen</Link>
                 </Button>
                 <Button variant="outline" size="lg" asChild>
-                  <a href="tel:+4915111073043">Jetzt anrufen</a>
+                  <Link to="/kontakt#termin">Haustermin vorbereiten</Link>
                 </Button>
               </div>
             </div>
