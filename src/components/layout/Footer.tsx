@@ -13,8 +13,8 @@ export function Footer() {
               {businessName}
             </h3>
             <p className="text-primary-foreground/70 font-body text-sm leading-relaxed max-w-md mb-6">
-              Verständliche Beratung für Sonnenschutz, Terrassendächer, Markisen, Rollläden und Dachfenster.
-              Direkt, einfach und mit klarem nächsten Schritt.
+              Rollläden, Markisen, Terrassendächer, Dachfenster und mehr für Heim und Haus.
+              Persönliche, unabhängige Beratung – direkt und verständlich.
             </p>
             <div className="flex flex-col gap-3">
               <a href={bookingSectionPath} className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors">

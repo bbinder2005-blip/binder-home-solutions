@@ -75,10 +75,10 @@ export function ServicesPreview() {
       <div className="container-width">
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl sm:text-4xl font-semibold text-foreground mb-4">
-            Beratungsthemen
+            Produkte für Heim und Haus
           </h2>
           <p className="font-body text-muted-foreground max-w-2xl mx-auto">
-            Schnell finden, worum es geht: Sonnenschutz, Wetterschutz, Licht, Sichtschutz oder Sicherheit.
+            Rollläden, Markisen, Terrassendächer & mehr – alles für mehr Komfort, Schutz und Wohnqualität.
           </p>
         </div>
 
