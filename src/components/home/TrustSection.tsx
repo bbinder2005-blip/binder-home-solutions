@@ -34,7 +34,7 @@ export function TrustSection() {
       <div className="container-width">
         <div className="text-center mb-12">
           <h2 className="font-display text-3xl sm:text-4xl font-semibold text-foreground mb-4">
-            Warum Binder Hausberatung?
+            Warum persönliche Fachberatung?
           </h2>
           <p className="font-body text-muted-foreground max-w-2xl mx-auto">
             Schnell verstehen, was möglich ist, welche Lösung passt und welcher nächste Schritt sinnvoll ist.

@@ -10,18 +10,18 @@ import img2 from "@/assets/test/zip-alt2.jpg";
 import img3 from "@/assets/test/zip-alt3.jpg";
 
 const images = [
-  { src: img1, label: "Einfamilienhaus" },
-  { src: img2, label: "Bürogebäude" },
-  { src: img3, label: "Strandhaus" },
+  { src: img1, label: "ZIP-Screen am Einfamilienhaus" },
+  { src: img2, label: "Senkrechtmarkise an der Fassade" },
+  { src: img3, label: "ZIP-Screen auf der Terrasse" },
 ];
 
 const features = [
-  "Windstabil durch ZIP-Führung bis 130 km/h",
+  "Windstabil durch seitliche ZIP-Führungsschiene",
   "Effektiver Blend- und Hitzeschutz",
-  "Sichtschutz bei Durchsicht nach außen",
-  "Insektenschutz inklusive",
-  "Leiser Motorantrieb",
+  "Sichtschutz von außen bei Durchsicht nach innen",
   "Verschiedene Transparenzgrade wählbar",
+  "Leiser Motorantrieb",
+  "Ideal für große Glas- und Terrassenflächen",
 ];
 
 export default function ZipScreens() {
@@ -110,16 +110,17 @@ export default function ZipScreens() {
               </div>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                ZIP-Screens sind die moderne Lösung für effektiven Sonnenschutz an 
-                Fenstern und Fassaden. Das innovative ZIP-Führungssystem hält das 
-                Gewebe auch bei starkem Wind sicher in der Führungsschiene.
+                ZIP-Screens sind Senkrechtmarkisen mit seitlicher Führungsschiene –
+                sie bleiben auch bei Wind stabil und schließen sauber ab.
+                In der Beratung klären wir, wann diese Lösung sinnvoll ist und
+                welche Tuch-Transparenz zu Ihrer Situation passt.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Die speziellen Screen-Gewebe bieten optimalen Blendschutz und 
-                reduzieren die Raumtemperatur spürbar. Gleichzeitig bleibt die 
-                Durchsicht nach außen erhalten. So genießen Sie Tageslicht ohne 
-                störende Blendung und schützen gleichzeitig Ihre Privatsphäre.
+                Screen-Gewebe reduzieren Blendung und Raumtemperatur spürbar,
+                ohne die Außensicht vollständig zu nehmen. Je nach Transparenzgrad
+                bleibt die Aussicht erhalten. ZIP-Screens eignen sich besonders
+                für große Glasflächen, Wintergärten und Terrassenöffnungen.
               </p>
 
               <div className="space-y-4">

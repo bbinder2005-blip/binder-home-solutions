@@ -10,9 +10,9 @@ import img2 from "@/assets/test/wintergarten-alt2.jpg";
 import img3 from "@/assets/test/wintergarten-alt3.jpg";
 
 const images = [
-  { src: img1, label: "Klassischer Wintergarten" },
-  { src: img2, label: "Viktorianischer Stil" },
-  { src: img3, label: "Moderner Glasanbau" },
+  { src: img1, label: "Wintergarten mit Innenbeschattung" },
+  { src: img2, label: "Außenbeschattung am Glasdach" },
+  { src: img3, label: "Wintergarten mit Beschattung" },
 ];
 
 const features = [
@@ -110,17 +110,17 @@ export default function Wintergartenbeschattung() {
               </div>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Mit unserer professionellen Wintergartenbeschattung schaffen Sie das perfekte 
-                Raumklima zu jeder Jahreszeit. Im Sommer schützt sie vor Überhitzung, 
-                im Winter verhindert sie Wärmeverlust.
+                Wintergärten ohne Beschattung überhitzen im Sommer schnell.
+                In der Beratung klären wir, ob Innen- oder Außenbeschattung für
+                Ihre Konstruktion sinnvoller ist und welches System im Alltag
+                am besten funktioniert.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Unsere Beschattungssysteme sind sowohl als Innen- als auch als Außenlösung 
-                erhältlich. Spezielle Reflexionsgewebe reflektieren bis zu 80% der 
-                Sonneneinstrahlung und sorgen so für angenehme Temperaturen. Die 
-                motorisierte Steuerung ermöglicht komfortables Bedienen per Fernbedienung 
-                oder Smart-Home-System.
+                Außenbeschattungen reduzieren die Wärme direkt am Glasdach –
+                das ist effektiver als Innenlösungen. Spezielle Reflexionsgewebe
+                halten die Raumtemperatur angenehm. Für vorhandene Konstruktionen
+                gibt es maßgefertigte Lösungen für Dach- und Seitenflächen.
               </p>
 
               <div className="space-y-4">

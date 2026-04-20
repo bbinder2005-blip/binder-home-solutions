@@ -10,9 +10,9 @@ import img2 from "@/assets/products/dachfenster-2.jpg";
 import img3 from "@/assets/products/dachfenster-3.jpg";
 
 const images = [
-  { src: img1, label: "Gemütliches Schlafzimmer" },
-  { src: img2, label: "Wohnzimmer mit Bergblick" },
-  { src: img3, label: "Modernes Home-Office" },
+  { src: img1, label: "Dachfenster mit Rollladen" },
+  { src: img2, label: "Dachfenster Innenansicht" },
+  { src: img3, label: "Dachfenster mit Verdunkelung" },
 ];
 
 const features = [
@@ -110,16 +110,17 @@ export default function Dachfenster() {
               </div>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Moderne Dachfenster bringen natürliches Licht in Ihre Dachräume und 
-                schaffen ein angenehmes Wohnklima. Ob Neubau oder Renovierung – 
-                wir finden die passende Lösung für jede Dachkonstruktion.
+                Dachfenster bringen Licht und frische Luft in Räume unter dem Dach.
+                In der Beratung geht es um Größe, Öffnungsart, Wärmeschutz
+                und passende Verdunkelung – damit das Dachfenster zu Ihrem
+                Raum und Ihrer Nutzung passt.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Unsere Dachfenster überzeugen durch hervorragende Wärmedämmung, 
-                einfache Bedienung und lange Lebensdauer. Mit dem passenden 
-                Zubehör wie Rollläden, Verdunkelungen oder Insektenschutz wird 
-                Ihr Dachfenster zur perfekten Lösung für jeden Anspruch.
+                Schwingfenster, Klapp-Schwing-Fenster und Ausstiegsfenster
+                haben jeweils Vor- und Nachteile je nach Raumhöhe und Lage.
+                Ergänzungen wie Rollläden, Verdunkelungen oder Insektenschutz
+                lassen sich direkt auf das Fenstermaß abstimmen.
               </p>
 
               <div className="space-y-4">

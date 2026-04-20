@@ -10,18 +10,18 @@ import img2 from "@/assets/test/pergola-alt2.jpg";
 import img3 from "@/assets/test/pergola-alt3.jpg";
 
 const images = [
-  { src: img1, label: "Gartenterrasse" },
-  { src: img2, label: "Französisches Landhaus" },
-  { src: img3, label: "Villa mit Pool" },
+  { src: img1, label: "Pergola auf der Terrasse" },
+  { src: img2, label: "Lamellenöffnung im Gegenlicht" },
+  { src: img3, label: "Pergola mit Seitenelement" },
 ];
 
 const features = [
-  "Wasserdichtes Lamellendach",
-  "Stufenlos verstellbare Lamellen",
-  "Integrierte Regenrinne",
-  "Optional mit Seitenmarkisen erweiterbar",
+  "Stufenlos verstellbare Aluminium-Lamellen",
+  "Wasserdicht bei geschlossener Stellung",
+  "Integrierte Regenrinne im Profil",
+  "Erweiterbar mit Seitenmarkisen oder -screens",
   "LED-Beleuchtung integrierbar",
-  "Windstabil bis 120 km/h",
+  "Elektrische Steuerung per Fernbedienung",
 ];
 
 export default function PergolaMarkisen() {
@@ -110,16 +110,16 @@ export default function PergolaMarkisen() {
               </div>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Unsere Pergola-Markisen bieten die perfekte Kombination aus Sonnenschutz, 
-                Regenschutz und elegantem Design. Die innovativen Lamellensysteme lassen sich 
-                stufenlos verstellen und passen sich so jeder Wetterlage an.
+                Pergola-Markisen mit verstellbaren Aluminium-Lamellen bieten flexiblen
+                Schutz vor Sonne, Hitze und Regen. In der Beratung klären wir,
+                welches System zu Ihrer Fläche, Nutzung und Ihrem Wunschkomfort passt.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Das hochwertige Aluminiumgestell ist besonders langlebig und wartungsarm. 
-                Die wasserdichten Lamellen schützen zuverlässig vor Regen und leiten das 
-                Wasser über integrierte Rinnen ab. Bei Sonnenschein sorgen sie für 
-                angenehme Beschattung mit perfekter Luftzirkulation.
+                Die Lamellen lassen sich stufenlos öffnen und schließen – so steuern
+                Sie Licht, Schatten und Luftzirkulation nach Bedarf. Bei geschlossener
+                Stellung ist das Dach wasserdicht; integrierte Rinnen leiten
+                Regenwasser sauber ab. Seitenelemente lassen sich ergänzen.
               </p>
 
               <div className="space-y-4">

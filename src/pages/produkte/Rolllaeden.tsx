@@ -10,18 +10,18 @@ import img2 from "@/assets/test/rolladen-alt2.jpg";
 import img3 from "@/assets/test/rolladen-alt3.jpg";
 
 const images = [
-  { src: img1, label: "Schlafzimmer" },
-  { src: img2, label: "Moderner Dachausbau" },
-  { src: img3, label: "Loft mit Bergblick" },
+  { src: img1, label: "Rollladen am Einfamilienhaus" },
+  { src: img2, label: "Vorbaurollladen außen" },
+  { src: img3, label: "Motorisierter Rollladen" },
 ];
 
 const features = [
-  "Perfekte Verdunkelung für erholsamen Schlaf",
-  "Zusätzliche Wärmedämmung im Winter",
-  "Hitzeschutz im Sommer",
-  "Motorisierte Steuerung per Fernbedienung",
-  "Zeitschaltuhr-Funktion programmierbar",
-  "Auch für Dachfenster erhältlich",
+  "Verdunkelung und Sichtschutz zu jeder Tageszeit",
+  "Wärmedämmung im Winter, Hitzeschutz im Sommer",
+  "Erhöhter Einbruchschutz durch stabile Profile",
+  "Schallreduzierung durch geschlossenes Panzer",
+  "Manuelle oder motorisierte Bedienung",
+  "Kombination mit Insektenschutz möglich",
 ];
 
 export default function Rolllaeden() {
@@ -102,7 +102,7 @@ export default function Rolllaeden() {
             <div className="space-y-8">
               <div>
                 <span className="text-accent font-medium text-sm uppercase tracking-wider">
-                  Verdunkelung & Dämmung
+                  Wärme-, Schall- & Einbruchschutz
                 </span>
                 <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground mt-2">
                   Rollläden & Insektenschutz
@@ -110,16 +110,16 @@ export default function Rolllaeden() {
               </div>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Unsere Rollläden bieten die perfekte Lösung für Verdunkelung, 
-                Wärmedämmung und Sicherheit. Besonders für Dachfenster sind sie 
-                unverzichtbar, um Schlafräume optimal abzudunkeln.
+                Rollläden verbessern spürbar Schlaf, Raumklima und Sicherheit.
+                In der Beratung klären wir, ob Nachrüstung, Austausch oder
+                Ergänzung sinnvoll ist und welche Ausführung zu Ihren Fenstern passt.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Die hochwertige Verarbeitung garantiert leisen Betrieb und lange 
-                Lebensdauer. Motorisierte Varianten lassen sich bequem per 
-                Fernbedienung oder Smart-Home-System steuern. Programmierbare 
-                Zeitschaltuhren simulieren Anwesenheit und erhöhen die Sicherheit.
+                Aluminium-Rollläden sind langlebig, pflegeleicht und in vielen
+                Farben erhältlich. Ob Gurtwickler, Aufzugsgurt oder Motor –
+                die Bedienung lässt sich einfach an Ihren Alltag anpassen.
+                Eine Kombination mit Insektenschutzgitter ist ebenfalls möglich.
               </p>
 
               <div className="space-y-4">

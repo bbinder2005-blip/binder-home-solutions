@@ -11,8 +11,8 @@ import img3 from "@/assets/products/markise-3.jpg";
 
 const images = [
   { src: img1, label: "Kassettenmarkise am Einfamilienhaus" },
-  { src: img2, label: "Gelenkarmmarkise auf Terrasse" },
-  { src: img3, label: "Premium-Markise am Penthouse" },
+  { src: img2, label: "Gelenkarmmarkise auf der Terrasse" },
+  { src: img3, label: "Markise am Balkon" },
 ];
 
 const features = [
@@ -110,16 +110,17 @@ export default function Markisen() {
               </div>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Unsere hochwertigen Markisen bieten zuverlässigen Sonnenschutz für 
-                Terrassen, Balkone und Fensterfronten. Von der klassischen Gelenkarmmarkise 
-                bis zur modernen Kassettenmarkise – wir haben die passende Lösung für Sie.
+                Markisen sind ein einfacher und wirkungsvoller Weg zu mehr Schatten
+                auf Terrasse, Balkon oder vor großen Fensterflächen. In der Beratung
+                erkläre ich die Unterschiede zwischen Gelenkarm- und Kassettenmarkise
+                verständlich und helfe bei der Auswahl von Tuch, Bedienung und Zubehör.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Die robusten Gestelle aus pulverbeschichtetem Aluminium und die 
-                hochwertigen, UV-beständigen Markisenstoffe garantieren lange 
-                Lebensdauer und optimalen Schutz. Elektrische Antriebe mit 
-                Wind- und Sonnenautomatik sorgen für maximalen Komfort.
+                Aluminium-Gestelle sind langlebig und wartungsarm. UV-beständige
+                Markisenstoffe schützen zuverlässig vor Sonne und Hitze.
+                Elektrische Antriebe mit Wind- und Sonnensensor erhöhen den Komfort
+                und schonen das Tuch bei schlechtem Wetter automatisch.
               </p>
 
               <div className="space-y-4">

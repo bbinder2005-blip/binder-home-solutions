@@ -33,15 +33,14 @@ const UeberMich = () => {
         <div className="container-width">
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl sm:text-4xl font-semibold text-foreground mb-4">
-              Ihre Ansprechpartner
+              Ihr Ansprechpartner
             </h2>
             <p className="font-body text-muted-foreground max-w-2xl mx-auto">
               Direkte Beratung ohne komplizierte Umwege
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* Benedikt Binder */}
+          <div className="max-w-sm mx-auto">
             <div className="bg-secondary rounded-lg p-8 text-center">
               <div className="w-24 h-24 bg-accent/10 rounded-full mx-auto mb-6 flex items-center justify-center">
                 <span className="font-display text-3xl text-accent">BB</span>
@@ -50,18 +49,7 @@ const UeberMich = () => {
                 Benedikt Binder
               </h3>
               <p className="font-body text-muted-foreground mt-2">
-                Fachberater für Sonnen- und Wetterschutz
-              </p>
-            </div>
-
-            {/* Maximilian Größer */}
-            <div className="bg-secondary rounded-lg p-8 text-center">
-              <div className="w-24 h-24 bg-accent/10 rounded-full mx-auto mb-6 flex items-center justify-center">
-                <span className="font-display text-3xl text-accent">MG</span>
-              </div>
-              <h3 className="font-display text-2xl font-semibold text-foreground">Maximilian Grießer</h3>
-              <p className="font-body text-muted-foreground mt-2">
-                Fachberater für Sonnen- und Wetterschutz
+                Fachberater für Rollläden, Markisen & Sonnenschutz
               </p>
             </div>
           </div>

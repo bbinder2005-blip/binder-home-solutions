@@ -10,18 +10,18 @@ import img2 from "@/assets/test/terrace-alt2.jpg";
 import img3 from "@/assets/test/terrace-alt3.jpg";
 
 const images = [
-  { src: img1, label: "Moderne Terrasse" },
-  { src: img2, label: "Mediterrane Villa" },
-  { src: img3, label: "Penthouse Dachterrasse" },
+  { src: img1, label: "Terrassendach mit Glasdach" },
+  { src: img2, label: "Aluminium-Terrassendach" },
+  { src: img3, label: "Überdachte Terrasse am Haus" },
 ];
 
 const features = [
-  "Wetterfeste Konstruktion aus Aluminium",
-  "Integrierte LED-Beleuchtung optional",
+  "Wetterfeste Aluminium-Konstruktion",
   "Verschiedene Glasarten wählbar (VSG, ESG)",
-  "Motorisierte Beschattungssysteme",
-  "Individuelle Maßanfertigung",
-  "10 Jahre Garantie auf Konstruktion",
+  "Integrierte LED-Beleuchtung optional",
+  "Erweiterbar mit Beschattung und Seitenelementen",
+  "Individuelle Maßanfertigung für jede Terrassengröße",
+  "Verschiedene Farben und Designs verfügbar",
 ];
 
 export default function Terrassendaecher() {
@@ -110,16 +110,16 @@ export default function Terrassendaecher() {
               </div>
 
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Unsere hochwertigen Terrassendächer verwandeln Ihre Terrasse in einen 
-                ganzjährig nutzbaren Wohnraum. Ob Regen, Wind oder intensive Sonneneinstrahlung – 
-                mit unseren maßgefertigten Lösungen genießen Sie Ihren Außenbereich bei jedem Wetter.
+                Ein Terrassendach macht die Terrasse wetterunabhängig nutzbar – bei Regen,
+                Wind und starker Sonne. In der Beratung klären wir, welche Dachform,
+                Verglasung und Beschattung zu Ihrem Haus und Ihrer Terrasse passen.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                Die robuste Aluminiumkonstruktion in Kombination mit hochwertigem Sicherheitsglas 
-                bietet optimalen Schutz und eine elegante Optik. Optionale integrierte 
-                Beleuchtungssysteme und motorisierte Beschattungen machen Ihr Terrassendach 
-                zum komfortablen Highlight Ihres Zuhauses.
+                Aluminium-Konstruktionen sind langlebig, pflegeleicht und in vielen
+                Farben erhältlich. Sicherheitsglas (VSG oder ESG) sorgt für
+                Stabilität und Lichteinfall. Optional lassen sich Seitenelemente,
+                Beleuchtung und motorisierte Beschattung ergänzen.
               </p>
 
               <div className="space-y-4">
