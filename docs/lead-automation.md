@@ -6,7 +6,7 @@ Diese Website ist vorbereitet für HubSpot Free Forms und Calendly. Die echte Au
 
 1. In HubSpot ein kostenloses Formular für Beratungsanfragen erstellen.
 2. Im HubSpot-Einbettungscode `portalId` und `formId` kopieren.
-3. In Lovable oder beim Hosting diese Variablen setzen:
+3. Beim Hosting diese Variablen setzen:
 
 ```env
 VITE_HUBSPOT_PORTAL_ID=deine_portal_id

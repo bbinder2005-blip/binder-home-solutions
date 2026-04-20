@@ -21,13 +21,17 @@ import Datenschutz from "./pages/Datenschutz";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
+const routerBasename =
+  import.meta.env.BASE_URL === "/"
+    ? "/"
+    : import.meta.env.BASE_URL.replace(/\/$/, "");
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename={routerBasename}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/leistungen" element={<Leistungen />} />
