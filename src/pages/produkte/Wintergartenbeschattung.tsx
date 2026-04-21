@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/home/CTASection";
 
-import img1 from "@/assets/test/wintergarten-alt1.jpg";
-import img2 from "@/assets/test/wintergarten-alt2.jpg";
-import img3 from "@/assets/test/wintergarten-alt3.jpg";
+import img1 from "@/assets/products/wgb-1.jpg";
+import img2 from "@/assets/products/wgb-2.jpg";
+import img3 from "@/assets/products/wgb-3.jpg";
 
 const images = [
-  { src: img1, label: "Wintergartenmarkise WGB PLUS – Aufdachbeschattung" },
-  { src: img2, label: "WGB UNTERGLAS – Beschattung unter dem Glasdach" },
-  { src: img3, label: "Beschattung am Terrassendach" },
+  { src: img1, label: "Terrassendach mit ZIP-Screens – Sonnenschutz tagsüber" },
+  { src: img2, label: "Terrassendach mit LED-Beleuchtung – Abendstimmung" },
+  { src: img3, label: "Terrassendach offen – maximaler Lichteinfall" },
 ];
 
 const features = [
