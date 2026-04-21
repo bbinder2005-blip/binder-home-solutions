@@ -11,8 +11,8 @@ import img3 from "@/assets/products/markise-3.jpg";
 
 const images = [
   { src: img1, label: "Kassettenmarkise am Einfamilienhaus" },
-  { src: img2, label: "Gelenkarmmarkise auf der Terrasse" },
-  { src: img3, label: "Markise am Balkon" },
+  { src: img2, label: "Kassettengehäuse – eingezogene Markise" },
+  { src: img3, label: "Gelenkarm – ausgefahrene Kassettenmarkise" },
 ];
 
 const features = [
