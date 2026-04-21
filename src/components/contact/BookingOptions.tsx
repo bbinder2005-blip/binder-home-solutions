@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Bell,
   CalendarCheck,
@@ -102,6 +103,7 @@ const withCalendlyParams = (url: string) => {
 };
 
 export function BookingOptions() {
+  const navigate = useNavigate();
   const phoneBookingHref = calendlyPhoneUrl || phoneFallback;
   const homeBookingHref = calendlyHomeUrl || homeFallback;
   const whatsappLink = whatsappUrl("Hallo, ich habe eine kurze Rückfrage zu meinem Termin oder möchte Fotos senden.");
@@ -115,12 +117,13 @@ export function BookingOptions() {
         setBookingNotice(
           "Ihr Termin ist eingetragen. Sie erhalten eine Bestätigung und das Gespräch wird aufgezeichnet und zusammengefasst.",
         );
+        window.setTimeout(() => navigate("/termin-bestaetigt"), 700);
       }
     };
 
     window.addEventListener("message", handleCalendlyMessage);
     return () => window.removeEventListener("message", handleCalendlyMessage);
-  }, []);
+  }, [navigate]);
 
   const openBooking = async (href: string) => {
     if (!isExternalUrl(href)) {

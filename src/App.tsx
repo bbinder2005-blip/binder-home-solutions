@@ -16,6 +16,7 @@ import FensterTueren from "./pages/produkte/FensterTueren";
 import Rolllaeden from "./pages/produkte/Rolllaeden";
 import UeberMich from "./pages/UeberMich";
 import Kontakt from "./pages/Kontakt";
+import TerminBestaetigt from "./pages/TerminBestaetigt";
 import Impressum from "./pages/Impressum";
 import Datenschutz from "./pages/Datenschutz";
 import NotFound from "./pages/NotFound";
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/produkte/rolllaeden" element={<Rolllaeden />} />
           <Route path="/ueber-mich" element={<UeberMich />} />
           <Route path="/kontakt" element={<Kontakt />} />
+          <Route path="/termin-bestaetigt" element={<TerminBestaetigt />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="*" element={<NotFound />} />
