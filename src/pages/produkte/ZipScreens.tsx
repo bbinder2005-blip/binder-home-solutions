@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/home/CTASection";
 
-import img1 from "@/assets/test/zip-alt1.jpg";
-import img2 from "@/assets/test/zip-alt2.jpg";
-import img3 from "@/assets/test/zip-alt3.jpg";
+import img1 from "@/assets/products/zip-1.jpg";
+import img2 from "@/assets/products/zip-2.jpg";
+import img3 from "@/assets/products/zip-3.jpg";
 
 const images = [
-  { src: img1, label: "ZIP-Screen an der Glasfront – Einfamilienhaus" },
-  { src: img2, label: "Außenliegender ZIP-Screen am Fenster" },
-  { src: img3, label: "ZIP-Screen als Sichtschutz auf der Terrasse" },
+  { src: img1, label: "ZIP-Screen am Terrassendach – helles Landhaus" },
+  { src: img2, label: "ZIP-Screen in Bordeaux – moderner Holzbau" },
+  { src: img3, label: "ZIP-Screen an großer Glasfront" },
 ];
 
 const features = [
