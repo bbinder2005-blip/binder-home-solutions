@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Bell,
@@ -19,19 +19,8 @@ import {
   whatsappUrl,
 } from "@/config/contact";
 
-declare global {
-  interface Window {
-    Calendly?: {
-      initPopupWidget: (options: { url: string }) => void;
-    };
-  }
-}
-
 const phoneFallback = `mailto:${businessEmail}?subject=${encodeURIComponent("Telefonische Erstberatung buchen")}`;
 const homeFallback = `mailto:${businessEmail}?subject=${encodeURIComponent("Haustermin nach Vorabklärung anfragen")}`;
-
-const calendlyScriptUrl = "https://assets.calendly.com/assets/external/widget.js";
-const calendlyStyleUrl = "https://assets.calendly.com/assets/external/widget.css";
 
 const processSteps = [
   {
@@ -59,37 +48,6 @@ const automationItems = [
   "Zusammenfassung nach dem Gespräch",
 ];
 
-const loadCalendlyWidget = () =>
-  new Promise<void>((resolve, reject) => {
-    if (window.Calendly) {
-      resolve();
-      return;
-    }
-
-    if (!document.querySelector(`link[href="${calendlyStyleUrl}"]`)) {
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = calendlyStyleUrl;
-      document.head.appendChild(link);
-    }
-
-    const existingScript = document.querySelector<HTMLScriptElement>(`script[src="${calendlyScriptUrl}"]`);
-    if (existingScript) {
-      existingScript.addEventListener("load", () => resolve(), { once: true });
-      existingScript.addEventListener("error", () => reject(new Error("Calendly konnte nicht geladen werden.")), {
-        once: true,
-      });
-      return;
-    }
-
-    const script = document.createElement("script");
-    script.src = calendlyScriptUrl;
-    script.async = true;
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error("Calendly konnte nicht geladen werden."));
-    document.body.appendChild(script);
-  });
-
 const withCalendlyParams = (url: string) => {
   try {
     const calendlyUrl = new URL(url);
@@ -108,6 +66,13 @@ export function BookingOptions() {
   const homeBookingHref = calendlyHomeUrl || homeFallback;
   const whatsappLink = whatsappUrl("Hallo, ich habe eine kurze Rückfrage zu meinem Termin oder möchte Fotos senden.");
   const [bookingNotice, setBookingNotice] = useState("");
+  const [activeBooking, setActiveBooking] = useState<"phone" | "home" | null>("phone");
+
+  const activeBookingHref = useMemo(() => {
+    if (activeBooking === "home") return homeBookingHref;
+    if (activeBooking === "phone") return phoneBookingHref;
+    return "";
+  }, [activeBooking, homeBookingHref, phoneBookingHref]);
 
   useEffect(() => {
     const handleCalendlyMessage = (event: MessageEvent) => {
@@ -124,16 +89,6 @@ export function BookingOptions() {
     window.addEventListener("message", handleCalendlyMessage);
     return () => window.removeEventListener("message", handleCalendlyMessage);
   }, [navigate]);
-
-  const openBooking = async (href: string) => {
-    if (!isExternalUrl(href)) {
-      window.location.href = href;
-      return;
-    }
-
-    await loadCalendlyWidget();
-    window.Calendly?.initPopupWidget({ url: withCalendlyParams(href) });
-  };
 
   return (
     <section id="termin" className="section-padding bg-background scroll-mt-24">
@@ -177,7 +132,7 @@ export function BookingOptions() {
               type="button"
               size="lg"
               className="w-full bg-green-600 text-white hover:bg-green-700"
-              onClick={() => openBooking(phoneBookingHref)}
+              onClick={() => setActiveBooking("phone")}
             >
               <CalendarCheck className="w-5 h-5" />
               Jetzt Termin buchen
@@ -209,7 +164,7 @@ export function BookingOptions() {
               type="button"
               size="lg"
               className="w-full bg-green-600 text-white hover:bg-green-700"
-              onClick={() => openBooking(homeBookingHref)}
+              onClick={() => setActiveBooking("home")}
             >
               <Home className="w-5 h-5" />
               Jetzt Termin buchen
@@ -219,6 +174,52 @@ export function BookingOptions() {
             </p>
           </article>
         </div>
+
+        {isExternalUrl(activeBookingHref) && (
+          <div className="mt-8 rounded-lg border border-border bg-secondary p-4 sm:p-6">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between mb-4">
+              <div>
+                <p className="font-body text-sm font-medium text-accent">
+                  Direkte Buchung auf Ihrer Website
+                </p>
+                <h3 className="font-display text-2xl font-semibold text-foreground">
+                  {activeBooking === "home" ? "Vor-Ort-Termin auswählen" : "Telefontermin auswählen"}
+                </h3>
+              </div>
+              <div className="flex gap-2">
+                <Button
+                  type="button"
+                  variant={activeBooking === "phone" ? "default" : "outline"}
+                  onClick={() => setActiveBooking("phone")}
+                >
+                  Telefonat
+                </Button>
+                <Button
+                  type="button"
+                  variant={activeBooking === "home" ? "default" : "outline"}
+                  onClick={() => setActiveBooking("home")}
+                >
+                  Vor Ort
+                </Button>
+              </div>
+            </div>
+
+            <p className="font-body text-sm text-muted-foreground mb-4">
+              Der Kalender bleibt direkt auf dieser Seite. Nach erfolgreicher Buchung geht es auf Ihre eigene
+              Bestätigungsseite weiter.
+            </p>
+
+            <div className="overflow-hidden rounded-lg border border-border bg-background">
+              <iframe
+                key={activeBookingHref}
+                src={withCalendlyParams(activeBookingHref)}
+                title={activeBooking === "home" ? "Calendly Vor-Ort-Termin" : "Calendly Telefontermin"}
+                className="w-full min-h-[780px]"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        )}
 
         {bookingNotice && (
           <div className="mt-6 rounded-lg border border-green-600 bg-green-50 p-5 text-green-900">
@@ -299,8 +300,8 @@ export function BookingOptions() {
         {!calendlyPhoneUrl && (
           <div className="mt-6 rounded-lg border border-dashed border-border bg-secondary/50 p-4">
             <p className="font-body text-sm text-muted-foreground">
-              Der Kalenderbereich ist vorbereitet. Sobald der Calendly-Link hinterlegt ist, öffnen die Buttons das
-              Buchungsfenster direkt als Popup.
+              Der Kalenderbereich ist vorbereitet. Sobald der Calendly-Link hinterlegt ist, erscheint die Buchung direkt
+              auf dieser Seite.
             </p>
           </div>
         )}
